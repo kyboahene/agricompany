@@ -4,6 +4,12 @@
  * Copyright 2014-2020 Froala Labs
  */
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -34984,7 +34990,7 @@ blockquote {
   min-height: 83px;
 }
 
-.u-header .u-image-1 {
+.u-header .u-image-14 {
   margin: 22px auto 0 0;
 }
 
@@ -34993,7 +34999,7 @@ blockquote {
   max-height: 64px;
 }
 
-.u-header .u-menu-1 {
+.u-header .u-menu-14 {
   margin: -32px 0 22px auto;
 }
 
@@ -35012,35 +35018,35 @@ blockquote {
   margin-left: 0;
 }
 
-.u-header .u-menu-close-1 {
+.u-header .u-menu-close-14 {
   height: 28px;
   margin: 26px 80px 0 398px;
 }
 
-.u-header .u-nav-2 {
+.u-header .u-nav-24 {
   font-size: 3rem;
   width: 198px;
   height: 288px;
   margin: 180px 80px 0 auto;
 }
 @media (max-width: 1199px) {
-  .u-header .u-menu-1 {
+  .u-header .u-menu-14 {
     width: auto;
     margin-top: -32px;
   }
 
-  .u-header .u-nav-2 {
+  .u-header .u-nav-24 {
     width: 198px;
     height: 275px;
   }
 }
 @media (max-width: 991px) {
-  .u-header .u-image-1 {
+  .u-header .u-image-14 {
     width: 64px;
     height: 32px;
   }
 
-  .u-header .u-nav-2 {
+  .u-header .u-nav-24 {
     width: 294px;
     height: 352px;
     margin-top: 223px;
@@ -35048,19 +35054,23 @@ blockquote {
   }
 }
 @media (max-width: 767px) {
-  .u-header .u-image-1 {
+  .u-header .u-image-14 {
     width: auto;
   }
 
-  .u-header .u-nav-2 {
+  .u-header .u-nav-24 {
     width: 198px;
     margin-top: 183px;
   }
 }
 @media (max-width: 575px) {
-  .u-header .u-nav-2 {
+  .u-header .u-nav-24 {
     margin-top: 125px;
     margin-left: 122px;
+  }
+
+  .u-image.u-logo {
+    margin: 0 ;
   }
 }
 .u-footer .u-sheet-1 {
@@ -35102,7 +35112,7 @@ blockquote {
   padding: 20px 0;
 }
 
-.u-footer .u-image-1 {
+.u-footer .u-image-14 {
   margin: 26px auto 0 55px;
 }
 
@@ -35227,7 +35237,7 @@ blockquote {
     min-height: 309px;
   }
 
-  .u-footer .u-image-1 {
+  .u-footer .u-image-14 {
     margin-top: 34px;
     margin-left: 12px;
   }
@@ -35323,7 +35333,7 @@ blockquote {
     min-height: 294px;
   }
 
-  .u-footer .u-image-1 {
+  .u-footer .u-image-14 {
     width: auto;
     margin-top: 27px;
     margin-left: 59px;
@@ -35421,7 +35431,7 @@ blockquote {
     min-height: 318px;
   }
 
-  .u-footer .u-image-1 {
+  .u-footer .u-image-14 {
     width: 80px;
     margin-top: 13px;
     margin-left: auto;
@@ -35517,7 +35527,7 @@ blockquote {
     min-height: 194px;
   }
 
-  .u-footer .u-image-1 {
+  .u-footer .u-image-14 {
     margin-top: 0;
   }
 

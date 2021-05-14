@@ -13,7 +13,7 @@ const Navbar = () => {
             alt="company logo"
           />
         </a>
-        <nav className="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1">
+        <nav className="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-14">
           <div
             className="menu-collapse u-custom-font u-font-raleway"
             style={{
@@ -43,7 +43,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className="u-custom-menu u-nav-container">
-            <ul className="u-custom-font u-font-raleway u-nav u-spacing-30 u-unstyled u-nav-1">
+            <ul className="u-custom-font u-font-raleway u-nav u-spacing-30 u-unstyled u-nav-14">
               <li className="u-nav-item">
                 <a
                   className="u-border-3 u-border-active-palette-2-dark-1 u-border-hover-palette-2-dark-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-dark-1 u-text-grey-90 u-text-hover-grey-90"
@@ -84,12 +84,12 @@ const Navbar = () => {
           </div>
           <div className="u-custom-menu u-nav-container-collapse">
             <div
-              className="u-container-style u-inner-container-layout u-sidenav u-white u-sidenav-1"
+              className="u-container-style u-inner-container-layout u-sidenav u-white u-sidenav-14"
               data-offcanvas-width="500"
             >
               <div className="u-sidenav-overflow">
-                <div className="u-menu-close u-menu-close-1"></div>
-                <ul className="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-custom-font u-font-raleway u-nav u-popupmenu-items u-spacing-0 u-text-active-palette-2-dark-1 u-unstyled u-nav-2">
+                <div className="u-menu-close u-menu-close-14"></div>
+                <ul className="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-custom-font u-font-raleway u-nav u-popupmenu-items u-spacing-0 u-text-active-palette-2-dark-1 u-unstyled u-nav-24">
                   <li className="u-nav-item">
                     <a
                       className="u-button-style u-nav-link"
