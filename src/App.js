@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
-import HashLoader from 'react-spinners/HashLoader'
+import RiseLoader from 'react-spinners/RiseLoader'
 import { AnimatePresence, motion } from 'framer-motion'
 
 import About from './pages/about'
@@ -15,7 +15,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 2000)
+    }, 3000)
   }, [])
 
   return (
@@ -35,7 +35,7 @@ function App() {
             backgroundColor: '#804832',
           }}
         >
-          <HashLoader color="#fff" loading={loading} size={80} />
+          <RiseLoader color="#fff" loading={loading} size={40} />
         </motion.div>
       ) : (
         <AnimatePresence exitBeforeEnter>
