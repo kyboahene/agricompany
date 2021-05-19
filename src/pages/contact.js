@@ -34,8 +34,9 @@ const contact = () => {
       </section>
 
       <section
-        className="u-align-center u-clearfix u-palette-2-light-3 u-section-22"
+        className="u-align-center u-clearfix  u-section-22"
         id="sec-c2b3"
+        style={{ backgroundColor: '#CBA289', color: '#000' }}
       >
         <div className="u-clearfix u-sheet u-sheet-12">
           <h1 className="u-align-left-md u-align-left-sm u-align-left-xs u-custom-font u-font-raleway u-text u-text-12">
@@ -156,7 +157,7 @@ const contact = () => {
             Phone:
           </h4>
           <p className="u-align-left u-custom-font u-font-raleway u-text u-text-62">
-            0504512117
+            233 54 726 4511
           </p>
           <h4 className="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-text u-text-72">
             Email:&nbsp;

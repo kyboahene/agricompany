@@ -1,5 +1,5 @@
-import React from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
@@ -13,8 +13,12 @@ import Goat from '../images/goat-4884605_1920.jpg'
 import Animals from '../images/goats-2052733_1920.jpg'
 import Plants from '../images/plants.jpg'
 import Affordable from '../images/affordable.jpg'
+import mushroom1 from '../images/mushroom-576462.svg'
+import Snail1 from '../images/snail-2594139.png'
 
 const Home = () => {
+  const [page, setPage] = useState('Home')
+
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -23,7 +27,7 @@ const Home = () => {
       className="u-body u-overlap"
     >
       {/* Navbar Begins */}
-      {/* <Navbar /> */}
+      <Navbar />
       {/* Navbar Ends */}
 
       <section
@@ -49,8 +53,9 @@ const Home = () => {
                       className="u-image u-image-circle u-image-1"
                     ></div>
                     <p className="u-align-center u-custom-font u-font-raleway u-text u-text-2">
-                      &nbsp;Your place of quality and healthy primary food
-                      production. <br />
+                      &nbsp;A technology driven business that pioneers
+                      sustainable food production and processing in Africa{' '}
+                      <br />
                     </p>
                     <a
                       href="http://webneel.com/30-incredible-and-award-winning-fashion-photography-cergelyte-khokhlov-and-witzel"
@@ -58,7 +63,7 @@ const Home = () => {
                       title="learn more"
                       target="_blank"
                       rel="noreferrer"
-                      style={{ backgroundColor: '#1B842C' }}
+                      style={{ backgroundColor: '#804832' }}
                     >
                       learn more
                     </a>
@@ -76,8 +81,8 @@ const Home = () => {
                       Welcome to TIES Agric
                     </h1>
                     <p className="u-align-center u-custom-font u-font-raleway lead">
-                      Using innovative technology to improve the efficiency and
-                      sustainability of food cultivation in Africa.
+                      A technology driven business that pioneers sustainable
+                      food production and processing in Africa.
                     </p>
                   </div>
                 </div>
@@ -88,13 +93,9 @@ const Home = () => {
                   <div className="u-container-layout">
                     <div
                       className="u-shape u-shape-rectangle u-shape-1"
-                      style={{ backgroundColor: '#1B842C' }}
+                      style={{ backgroundColor: '#804832' }}
                     ></div>
-                    <div
-                      className="u-container-style u-group u-image u-image-tiles u-image-2"
-                      data-image-width="100"
-                      data-image-height="100"
-                    >
+                    <div className="u-container-style u-group u-image u-image-tiles u-image-2">
                       <div className="u-container-layout u-container-layout-3"></div>
                     </div>
                     <img className="u-image u-image-3" src={Image} alt="" />
@@ -109,7 +110,7 @@ const Home = () => {
       <section
         className="u-align-center u-clearfix u-section-2"
         id="sec-0d7f"
-        style={{ backgroundColor: '#1B842C', color: '#fff' }}
+        style={{ backgroundColor: '#804832', color: '#fff' }}
       >
         <div className="u-clearfix u-sheet u-sheet-1">
           <h1 className="u-custom-font u-font-raleway u-text u-text-1">
@@ -128,7 +129,7 @@ const Home = () => {
             <div className="u-repeater u-repeater-1">
               <div
                 className="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-list-item-1"
-                style={{ backgroundColor: '#3AAB58', color: '#fff' }}
+                style={{ backgroundColor: '#935E43', color: '#fff' }}
               >
                 <div className="u-container-layout u-similar-container u-container-layout-1 ">
                   <img
@@ -147,7 +148,7 @@ const Home = () => {
               </div>
               <div
                 className="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2"
-                style={{ backgroundColor: '#3AAB58', color: '#fff' }}
+                style={{ backgroundColor: '#935E43', color: '#fff' }}
               >
                 <div className="u-container-layout u-similar-container u-container-layout-2">
                   <img
@@ -165,7 +166,7 @@ const Home = () => {
               </div>
               <div
                 className="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-list-item-3"
-                style={{ backgroundColor: '#3AAB58', color: '#fff' }}
+                style={{ backgroundColor: '#935E43', color: '#fff' }}
               >
                 <div className="u-container-layout u-similar-container u-container-layout-3">
                   <img
@@ -195,12 +196,13 @@ const Home = () => {
             alt=""
             className="u-image u-image-circle u-image-1"
             data-image-width="980"
-            data-image-height="766"
+            data-image-height="736"
             data-animation-name="fadeIn"
             data-animation-duration="1500"
             data-animation-delay="0"
             data-animation-direction="Left"
             data-aos="fade-in"
+            data-aos-duration="1500"
           ></div>
           <p className="u-align-center-sm u-align-left-lg u-align-left-md u-align-left-xl u-align-left-xs u-custom-font u-font-raleway u-text u-text-2">
             Since 2017, we have strived to establish the business as a
@@ -211,9 +213,9 @@ const Home = () => {
             to the ...
           </p>
           <div className="row justify-content-center mb-5" id="customRow">
-            <div className="col-md-12 col-sm-3 text-center">
-              <a href="/services" className="mybutton" rel="noreferrer">
-                READ MORE
+            <div className="col-md-12 col-sm-12 text-center">
+              <a href="/about" className="mybutton" rel="noreferrer">
+                <span>READ MORE</span>
               </a>
             </div>
           </div>
@@ -239,7 +241,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className="container-fluid what_we_do">
         <div
           className="container u-custom-font u-font-raleway pt-5"
           id="what_we_do"
@@ -264,6 +266,7 @@ const Home = () => {
                 className="img-fluid rounded-circle shadow"
                 alt=""
                 data-aos="fade-down"
+                data-aos-duration="1500"
               />
               <h3 className="u-custom-font u-font-raleway">Mushrooms</h3>
               <p>
@@ -277,6 +280,7 @@ const Home = () => {
                 className="img-fluid rounded-circle shadow"
                 alt=""
                 data-aos="fade-up"
+                data-aos-duration="1500"
               />
               <h3 className="u-custom-font u-font-raleway">Fresh Snails</h3>
               <p>
@@ -290,6 +294,7 @@ const Home = () => {
                 className="img-fluid rounded-circle shadow"
                 alt=""
                 data-aos="fade-down"
+                data-aos-duration="1500"
               />
               <h3 className="u-custom-font u-font-raleway">Live Goats</h3>
               <p>
@@ -301,7 +306,7 @@ const Home = () => {
           <div className="row justify-content-center mb-5">
             <div className="col-md-3 col-sm-6 col-lg-6 text-center">
               <a href="/services" className="mybutton" rel="noreferrer">
-                READ MORE
+                <span>READ MORE</span>
               </a>
             </div>
           </div>
@@ -310,48 +315,51 @@ const Home = () => {
 
       <section
         className="container-fluid"
-        style={{ backgroundColor: '#3AAB58', color: '#fff' }}
+        style={{ backgroundColor: '#B88B64', color: '#fff' }}
       >
         <div className="container">
           <div className="row pt-5">
             <div className="col-md-12 col-lg-6 pr-0">
               <img
-                src={Image}
+                src={Snail1}
                 alt=""
                 className="img-fluid"
                 data-aos="fade-left"
+                data-aos-duration="1500"
               />
             </div>
             <div className="col-md-12 col-lg-6 justify-content-center align-items-center">
               <h1 className="pt-5 u-custom-font u-font-raleway font-weight-bold">
-                Lorem Ipsum
+                Did You Know?
               </h1>
               <p className="lead u-custom-font u-font-raleway">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Snails possess anti-cancer properties and boost the immune
+                system due to their antioxidants and anti-inflammatory effects.
+                An average snail is comprised of 80% water, 15% protein and 2.4%
+                fat.
               </p>
             </div>
           </div>
           <div className="row pb-5">
             <div className="col-md-12 col-lg-6 justify-content-center align-items-center">
-              <h1 className=" pt-5 u-custom-font u-font-raleway font-weight-bold">
-                Lorem Ipsum
+              <h1 className="pt-5 u-custom-font u-font-raleway font-weight-bold">
+                {''}
               </h1>
               <p className="lead u-custom-font u-font-raleway">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                The health benefits of mushrooms include relief from high
+                cholesterol levels, breast cancer, prostate cancer, and
+                diabetes. They also help in weight loss and increase the
+                strength of your immune system.
               </p>
             </div>
             <div className="col-md-12 col-lg-6 pl-0 ">
               <img
-                src={Image}
+                src={mushroom1}
                 alt=""
                 className="img-fluid"
                 data-aos="fade-left"
+                data-aos-duration="1500"
+                style={{ height: '400px', width: '400px' }}
               />
             </div>
           </div>
@@ -359,13 +367,13 @@ const Home = () => {
       </section>
 
       {/* Our Team */}
-      <Team />
+      <Team page={page} />
       {/* Our Team */}
 
       {/* Client Reviews Begins */}
       <section
         className="container-fluid"
-        style={{ backgroundColor: '#4FC880', color: '#fff' }}
+        style={{ backgroundColor: '#CBA289', color: '#fff' }}
       >
         <div className="container py-5">
           <div className="row justify-content-center pt-3">
@@ -455,10 +463,9 @@ const Home = () => {
                   <div className="u-align-center u-form-group u-form-submit">
                     <a
                       href="#n"
-                      className="u-btn u-btn-submit u-button-style u-custom-font u-font-raleway u-btn-12"
-                      style={{ backgroundColor: '#1B842C' }}
+                      className="mybutton u-button-style u-custom-font u-font-raleway u-btn-12"
                     >
-                      Submit
+                      <span>Submit</span>
                     </a>
                     <input
                       type="submit"

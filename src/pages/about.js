@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
 import Footer from '../components/footer'
@@ -7,7 +7,13 @@ import '../about.css'
 import Team from '../components/team'
 import Gallery from '../components/gallery'
 
+import Vision from '../images/vision.svg'
+import Mission from '../images/mission.svg'
+
+import Image from '../images/3.jpg'
+
 const About = () => {
+  const [page, setPage] = useState('Home')
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -53,15 +59,14 @@ const About = () => {
                       Know About Our History
                     </h1>
                     <p className="u-custom-font u-font-raleway u-text u-text-21">
-                      Paragraph. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Curabitur id suscipit ex. Suspendisse
-                      rhoncus laoreet purus quis elementum. Phasellus sed
-                      efficitur dolor, et ultricies sapien. Quisque fringilla
-                      sit amet dolor commodo efficitur. Aliquam et sem odio. In
-                      ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
-                      Paragraph. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Curabitur id suscipit ex. Suspendisse
-                      rhoncus laoreet purus quis elementum.
+                      Since 2017, we have strived to establish the business as a
+                      trustworthy supplier of primary agricultural produce. We
+                      started a mushroom farm, a goat farm and a snail farm. We
+                      are working to scale up while exploring natural
+                      preservation methods as our client base increases. This
+                      year, we hope to start supplying processed products to the
+                      wider market of domestic consumers by launching our first
+                      packaged organic mushroom product EcoMush.
                     </p>
                   </div>
                 </div>
@@ -72,8 +77,9 @@ const About = () => {
       </section>
 
       <section
-        className="u-clearfix u-palette-2-dark-1 u-section-31"
+        className="u-clearfix u-section-31"
         id="sec-e723"
+        style={{ backgroundColor: '#804832', color: '#fff' }}
       >
         <div className="u-clearfix u-sheet u-valign-middle u-sheet-11">
           <div className="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-11">
@@ -85,15 +91,9 @@ const About = () => {
                       Our Mission
                     </h1>
                     <p className="u-custom-font u-font-raleway u-text u-text-21">
-                      Paragraph. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Curabitur id suscipit ex. Suspendisse
-                      rhoncus laoreet purus quis elementum. Phasellus sed
-                      efficitur dolor, et ultricies sapien. Quisque fringilla
-                      sit amet dolor commodo efficitur. Aliquam et sem odio. In
-                      ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
-                      Paragraph. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Curabitur id suscipit ex. Suspendisse
-                      rhoncus laoreet purus quis elementum.
+                      Our mission is to provide refined agricultural products
+                      using technology and innovation to improve primary and
+                      secondary agricultural production in Africa.
                     </p>
                   </div>
                 </div>
@@ -112,12 +112,203 @@ const About = () => {
         </div>
       </section>
 
+      {/* Vision Begins */}
+      <section className="container-fluid vision">
+        <div className="container py-5">
+          <div className="row my-5">
+            <div className="col-md-6 d-flex justify-content-center align-items-center">
+              <img src={Vision} className="img-fluid" alt="" />
+            </div>
+            <div className="col-md-6 u-custom-font u-font-raleway">
+              <h1 className="u-custom-font u-font-raleway font-weight-bold">
+                Our Vision
+              </h1>
+              <p className="u-custom-font u-font-raleway lead">
+                To become a forerunner in the agricultural business, providing
+                organically grown produce and adding value to to raw
+                agricultural products.
+              </p>
+
+              <h4 className="u-custom-font u-font-raleway font-weight-bold">
+                Company Philosophy
+              </h4>
+              <ul className="lead">
+                <li>
+                  <lord-icon
+                    src="https://cdn.lordicon.com//jvihlqtw.json"
+                    trigger="loop"
+                    colors="primary:#121331,secondary:#08a88a"
+                    style={{ width: '40px', height: '40px' }}
+                  ></lord-icon>
+                  Technology
+                </li>
+                <li>
+                  <lord-icon
+                    src="https://cdn.lordicon.com//jvihlqtw.json"
+                    trigger="loop"
+                    colors="primary:#121331,secondary:#08a88a"
+                    style={{ width: '40px', height: '40px' }}
+                  ></lord-icon>{' '}
+                  Innovation
+                </li>
+                <li>
+                  <lord-icon
+                    src="https://cdn.lordicon.com//jvihlqtw.json"
+                    trigger="loop"
+                    colors="primary:#121331,secondary:#08a88a"
+                    style={{ width: '40px', height: '40px' }}
+                  ></lord-icon>
+                  Empowerment{' '}
+                </li>
+                <li>
+                  <lord-icon
+                    src="https://cdn.lordicon.com//jvihlqtw.json"
+                    trigger="loop"
+                    colors="primary:#121331,secondary:#08a88a"
+                    style={{ width: '40px', height: '40px' }}
+                  ></lord-icon>
+                  Sustainability{' '}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Mission Ends */}
+
       {/* Team Begins */}
-      <Team />
+      <section
+        className="container-fluid"
+        style={{ backgroundColor: '#CBA289', color: '#fff' }}
+      >
+        <div className="container pb-5">
+          <div className="row d-flex justify-content-center py-5">
+            <div className="col text-center u-custom-font u-font-raleway">
+              <h1 className="u-custom-font u-font-raleway font-weight-bold">
+                Our Team
+              </h1>
+              <p className=" u-custom-font u-font-raleway lead">
+                The brains behind the great firm.
+              </p>
+            </div>
+          </div>
+          <div className="row text-center py-5">
+            <div className="col-md-4">
+              <img
+                src={Image}
+                className="img-fluid rounded-circle member_image"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <h4 className="mb-0 u-custom-font u-font-raleway">
+                Abdallah Salia
+              </h4>
+              <p className="my-0">CO-Founder</p>
+              <div className="overlay">
+                <div className="middle">
+                  <div className="d-flex">
+                    <a href="" className="me-4 text-reset">
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset mx-3">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset ">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset mx-3">
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <img
+                src={Image}
+                className="img-fluid rounded-circle"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <h4 className="mb-0 u-custom-font u-font-raleway">
+                Michael Osei Twene
+              </h4>
+              <p className="my-0">CO-Founder</p>
+              <div className="overlay">
+                <div className="middle">
+                  <div className="d-flex">
+                    <a href="" className="me-4 text-reset">
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset mx-3">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset ">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset mx-3">
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <img
+                src={Image}
+                className="img-fluid rounded-circle"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <h4 className="mb-0 u-custom-font u-font-raleway">
+                Oppong Kwame
+              </h4>
+              <p className="my-0">Farm Manager</p>
+              <div className="overlay">
+                <div className="middle">
+                  <div className="d-flex">
+                    <a href="" className="me-4 text-reset">
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset mx-3">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset ">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset mx-3">
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                    <a href="" className="me-4 text-reset">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="row d-flex justify-content-center pb-5">
+            <div className="col-md-3 text-center">
+              <a href="/about" className="mybutton" rel="noreferrer">
+                <span>SEE MORE</span>
+              </a>
+            </div>
+          </div> */}
+        </div>
+      </section>
       {/* Team Ends */}
 
       {/* Client Reviews */}
-
+      {/* 
       <section
         className="u-clearfix u-palette-2-light-3 u-section-51"
         id="sec-9e27"
@@ -213,7 +404,7 @@ const About = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Client Ends */}
 
       {/* Gallery Begins*/}

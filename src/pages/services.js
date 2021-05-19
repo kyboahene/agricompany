@@ -5,6 +5,15 @@ import '../services.css'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 
+import mushIcon from '../images/mushroom-29738.svg'
+import Mushroom from '../images/image1.jpg'
+import MushSubstrate from '../images/image.jpg'
+import Snail from '../images/snail.jpg'
+import snailIcon from '../images/snail-710086.svg'
+import Goat from '../images/goat.jpg'
+import GoatMeat from '../images/frozen meat.svg'
+import goatIcon from '../images/female-48385.svg'
+
 const Services = () => {
   return (
     <motion.div
@@ -34,92 +43,153 @@ const Services = () => {
       </section>
 
       <section
-        class="u-clearfix u-image u-image-contain u-section-23"
-        id="sec-6095"
+        className="u-clearfix u-image u-image-contain u-section-23"
         data-image-width="1024"
         data-image-height="1024"
       >
-        <div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-13">
-          <h1 class="u-align-center-xs u-custom-font u-font-raleway u-text u-text-13">
-            What We Do
-          </h1>
-          <p class="u-align-center u-custom-font u-font-raleway u-text u-text-23">
-            We’re a small creative design studio based in New York, working with
-            adventurous clients and providing Creative Concept, Branding,
-            Graphic Design, Art Direction and Digital Communication services.
-          </p>
-          <img
-            src="images/casserole-dish-2776735_1920.jpg"
-            alt=""
-            class="u-image u-image-default u-image-13"
-            data-image-width="1600"
-            data-image-height="1067"
-          />
-          <h2 class="u-align-center u-custom-font u-font-raleway u-text u-text-33">
-            Service1
-          </h2>
-          <p class="u-align-center u-custom-font u-font-raleway u-text u-text-43">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-          <img
-            src="images/casserole-dish-2776735_1920.jpg"
-            alt=""
-            class="u-image u-image-default u-image-23"
-            data-image-width="1600"
-            data-image-height="1067"
-          />
-          <h2 class="u-align-center u-custom-font u-font-raleway u-text u-text-53">
-            Service2
-          </h2>
-          <p class="u-align-center u-custom-font u-font-raleway u-text u-text-63">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-          <img
-            src="images/casserole-dish-2776735_1920.jpg"
-            alt=""
-            class="u-image u-image-default u-image-13"
-            data-image-width="1600"
-            data-image-height="1067"
-          />
-          <h2 class="u-align-center u-custom-font u-font-raleway u-text u-text-33">
-            Service3
-          </h2>
-          <p class="u-align-center u-custom-font u-font-raleway u-text u-text-43">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-          <img
-            src="images/casserole-dish-2776735_1920.jpg"
-            alt=""
-            class="u-image u-image-default u-image-43"
-            data-image-width="1600"
-            data-image-height="1067"
-          />
-          <h2 class="u-align-center u-custom-font u-font-raleway u-text u-text-53">
-            Service4
-          </h2>
-          <p class="u-align-center u-custom-font u-font-raleway u-text u-text-63">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
+        <div className="container">
+          <div className="row d-flex justify-content-center align-items-center">
+            <div className="col-md-6 text-center col-sm-3">
+              <h1 class=" u-custom-font u-font-raleway font-weight-bold">
+                What We Do
+              </h1>
+              <p class=" u-custom-font u-font-raleway lead">
+                Our main areas of focus is primary food production with an
+                emphasis on using innovative technology to improve the
+                efficiency and sustainability of food cultivation in Africa.
+                Currently our business has three (3) lines of services.
+              </p>
+            </div>
+          </div>
+          <div className="row my-5">
+            <div className="col-12 my-5">
+              <h1 className="u-custom-font u-font-raleway text-center display-1">
+                Mushrooms{' '}
+                <img
+                  src={mushIcon}
+                  alt=""
+                  className="img-fluid"
+                  style={{ height: '40px', width: '40px' }}
+                />
+              </h1>
+            </div>
+            <div className="col-md-6">
+              <img
+                src={MushSubstrate}
+                alt=""
+                className="img-fluid rounded"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div className="col-md-6 d-flex justify-content-center align-items-center p-5">
+              <p className="u-align-left u-custom-font u-font-raleway lead">
+                <span className="font-weight-bold">Substrate Production</span>{' '}
+                <br /> We provide substrates for local mushroom farmers at
+                affordable prices to grow their business
+              </p>
+            </div>
+            <div className="col-md-6 mt-5">
+              <img
+                src={Mushroom}
+                alt=""
+                className="img-fluid rounded"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                style={{ height: '400px', objectFit: 'cover' }}
+              />
+            </div>
+            <div className="col-md-6 d-flex justify-content-center align-items-center p-5">
+              <p className="u-align-left u-custom-font u-font-raleway lead">
+                <span className="font-weight-bold">
+                  EcoMush and Bulk Supply EcoMus
+                </span>{' '}
+                <br /> EcoMush and Bulk Supply EcoMush is a frozen mushroom
+                product that is sold in cold stores across Kumasi. For bulk
+                orders, see our contact info. We also provide order services for
+                food joints that need bulk fresh mushroom supply to run their
+                business
+              </p>
+            </div>
+          </div>
+
+          <div className="row my-5 py-5">
+            <div className="col-12 my-5">
+              <h1 className="u-custom-font u-font-raleway text-center">
+                Snails{' '}
+                <img
+                  src={snailIcon}
+                  alt=""
+                  className="img-fluid"
+                  style={{ height: '50px', width: '50px' }}
+                />
+              </h1>
+            </div>
+            <div className="col-md-6 d-flex justify-content-center align-items-center p-5">
+              <p className="u-align-left u-custom-font u-font-raleway lead">
+                <span className="font-weight-bold">Fresh Snail</span> <br /> We
+                provide order and delivery for bulk purchase of fresh snails in
+                Sunyani, Kumasi and Accra
+              </p>
+            </div>
+            <div className="col-md-6 mt-5">
+              <img
+                src={Snail}
+                alt=""
+                className="img-fluid rounded"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                style={{ height: '400px', objectFit: 'cover' }}
+              />
+            </div>
+          </div>
+          <div className="row my-5">
+            <div className="col-12 my-5">
+              <h1 className="u-custom-font u-font-raleway text-center ">
+                Goats{' '}
+                <img
+                  src={goatIcon}
+                  alt=""
+                  className="img-fluid"
+                  style={{ height: '40px', width: '40px' }}
+                />
+              </h1>
+            </div>
+            {/* <div className="col-md-6">
+              <img
+                src={GoatMeat}
+                alt=""
+                className="img-fluid"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              />
+            </div>
+            <div className="col-md-6 d-flex justify-content-center align-items-center p-5">
+              <p className="u-align-left u-custom-font u-font-raleway lead">
+                <span className="font-weight-bold">Frozen goat meat</span>{' '}
+                <br /> We provide substrates for local mushroom farmers at
+                affordable prices to grow their business
+              </p>
+            </div> */}
+            <div className="col-md-6 mt-5">
+              <img
+                src={Goat}
+                alt=""
+                className="img-fluid rounded"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                style={{ height: '400px', objectFit: 'cover' }}
+              />
+            </div>
+            <div className="col-md-6 d-flex justify-content-center align-items-center p-5">
+              <p className="u-align-left u-custom-font u-font-raleway lead">
+                <span className="font-weight-bold">Live healthy goats</span>{' '}
+                <br /> We provide order and delivery of live goats in the
+                Sunyani area. We also fulfill order and delivery service of
+                processed goat meat in Accra, Kumasi and Sunyani
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       {/* Footer Begins */}

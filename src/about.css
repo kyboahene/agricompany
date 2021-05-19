@@ -16,6 +16,18 @@
   margin: 0 598px 60px 0;
 }
 
+.gallery img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.vision {
+  background: url('./images/bg3.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 1199px) {
   .u-section-11 {
     background-position: 50% 50%;
@@ -337,7 +349,7 @@
   width: 231px;
   height: 231px;
   animation-duration: 1000ms;
-  background-image: url('./images/5-min.jpg');
+  /* background-image: url('./images/5-min.jpg'); */
   background-position: 50% 50%;
   margin: 68px auto 0 8px;
 }
@@ -355,7 +367,7 @@
   width: 231px;
   height: 231px;
   animation-duration: 1000ms;
-  background-image: url('./images/1.jpg');
+  /* background-image: url('./images/1.jpg'); */
   background-position: 50% 50%;
   margin: -2133px auto 0 311px;
 }

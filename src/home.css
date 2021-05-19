@@ -98,9 +98,9 @@
   border-radius: 50%;
 } */
 
-.mybutton {
-  border: 2px solid #1b842c;
-  color: #1b842c;
+/* .mybutton {
+  border: 2px solid #804832;
+  color: #804832;
   font-size: 1rem;
   z-index: 0;
   padding: 0.5em 2em 0.5em;
@@ -109,13 +109,94 @@
 .mybutton:hover {
   border: 2px solid transparent;
   color: #fff;
-  background: #1b842c;
+  background: #804832;
   transform: scale(1.05);
   will-change: transform;
   font-weight: bold;
+} */
+
+.mybutton {
+  padding: 10px 20px;
+  border: 1px solid #804832;
+  display: inline-block;
+  color: #804832;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+.mybutton:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #804832;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  z-index: 0;
+  opacity: 0;
+}
+.mybutton span {
+  position: relative;
+  z-index: 5;
+}
+.mybutton:hover {
+  color: #fff;
+}
+.mybutton:hover:before {
+  -webkit-transform: scaleX(230);
+  -ms-transform: scaleX(230);
+  transform: scaleX(230);
+  opacity: 1;
+  color: #fff;
+  transition: 0.4s;
+}
+
+ul {
+  list-style: none;
+}
+
+.middle {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 999;
+}
+
+.col-md-4 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 22%;
+  height: 74%;
+  width: 56%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #935e43;
+  overflow: hidden;
+}
+
+.col-md-4:hover .overlay {
+  opacity: 0.8;
 }
 
 @media (max-width: 1199px) {
+  .col-md-4 .overlay {
+    width: 66%;
+    left: 17%;
+  }
+
   #forMobile {
     display: none;
   }
@@ -157,6 +238,13 @@
   }
 }
 
+.what_we_do {
+  background: url('./images/bg8.png');
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 991px) {
   #what_we_do img {
     width: 400px !important;
@@ -165,6 +253,12 @@
 
   #what_we_do .col-md-3 {
     padding: 0;
+  }
+
+  .col-md-4 .overlay {
+    width: 87%;
+    height: 67%;
+    left: 6%;
   }
 
   .u-section-1 .u-sheet-1 {
@@ -203,6 +297,12 @@
 }
 
 @media (max-width: 767px) {
+  .col-md-4 .overlay {
+    width: 39%;
+    height: 74%;
+    left: 30.5%;
+  }
+
   .u-section-1 .u-sheet-1 {
     min-height: 1354px;
   }
@@ -249,6 +349,12 @@
 
   #forMobile {
     display: block;
+  }
+
+  .col-md-4 .overlay {
+    width: 43%;
+    height: 66.6%;
+    left: 28.4%;
   }
 
   .u-section-1 .u-text-1 {
@@ -703,8 +809,12 @@
     margin-left: 839px;
   }
 
+  #customRow {
+    width: 80%;
+  }
+
   #customRow .col-md-12 {
-    margin: 0 0 0 10em;
+    margin: 0 0 0 20em;
   }
 }
 
@@ -780,14 +890,12 @@
     margin: 3em 2em 0 5em !important;
     width: 100%;
     padding: 0;
-    border: 1px red solid;
     left: 0;
   }
 
   #customRow .col-sm-3 {
     padding: 0;
     margin-right: 10em;
-    border: 1px red solid;
   }
 
   .u-section-4 .u-image-1 {
@@ -857,9 +965,10 @@
     padding: 0;
   }
 
-  #customRow .col-sm-3 {
+  #customRow .col-sm-12 {
     padding: 0;
-    margin-right: 10em;
+    width: 100%;
+    margin: 0 0 0 -10em;
   }
 
   .u-section-4 .mybutton {
@@ -1010,7 +1119,7 @@
 
 @media (max-width: 575px) {
   .team {
-    background: url('./images//Untitled-11.png');
+    background: url('./images/Untitled-11.png');
     background-size: contain;
   }
 
@@ -1668,7 +1777,7 @@
   width: 231px;
   height: 231px;
   animation-duration: 1000ms;
-  background-image: url('./images/5-min.jpg');
+  /* background-image: url('./images/5-min.jpg'); */
   background-position: 50% 50%;
   margin: 68px auto 0 45px;
 }
@@ -1686,7 +1795,7 @@
   width: 231px;
   height: 231px;
   animation-duration: 1000ms;
-  background-image: url('./images/1.jpg');
+  /* background-image: url('./images/1.jpg'); */
   background-position: 50% 50%;
   margin: -231px auto 0 325px;
 }

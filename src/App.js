@@ -32,7 +32,7 @@ function App() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            backgroundColor: '#1B842C',
+            backgroundColor: '#804832',
           }}
         >
           <HashLoader color="#fff" loading={loading} size={80} />

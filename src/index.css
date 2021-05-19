@@ -10,6 +10,7 @@
   margin: 0;
 }
 
+
 .fr-clearfix::after {
   clear: both;
   display: block;
