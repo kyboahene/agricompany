@@ -32,7 +32,7 @@ function App() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            backgroundColor: '#804832',
+            backgroundColor: '#507736',
           }}
         >
           <RiseLoader color="#fff" loading={loading} size={40} />

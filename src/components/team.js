@@ -1,6 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 import Image from '../images/3.jpg'
+import Micheal from '../images/Micheal.jpg'
+import Oppong from '../images/Oppong.jpg'
 
 const Team = ({ page }) => {
   return (
@@ -53,8 +56,8 @@ const Team = ({ page }) => {
           </div>
           <div className="col-md-4">
             <img
-              src={Image}
-              className="img-fluid rounded-circle"
+              src={Micheal}
+              className="img-fluid rounded-circle member_image"
               alt=""
               data-aos="fade-up"
               data-aos-duration="1500"
@@ -87,8 +90,8 @@ const Team = ({ page }) => {
           </div>
           <div className="col-md-4">
             <img
-              src={Image}
-              className="img-fluid rounded-circle"
+              src={Oppong}
+              className="img-fluid rounded-circle member_image"
               alt=""
               data-aos="fade-up"
               data-aos-duration="1500"

@@ -1,17 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import '../services.css'
+import '../css/services.css'
 
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 
 import mushIcon from '../images/mushroom-29738.svg'
-import Mushroom from '../images/image1.jpg'
-import MushSubstrate from '../images/image.jpg'
-import Snail from '../images/snail.jpg'
+import Mushroom from '../images/mushrooms.jpg'
+import MushSubstrate from '../images/image2.jpg'
+import Snail from '../images/image1.jpg'
 import snailIcon from '../images/snail-710086.svg'
 import Goat from '../images/goat.jpg'
-import GoatMeat from '../images/frozen meat.svg'
 import goatIcon from '../images/female-48385.svg'
 
 const Services = () => {
@@ -86,7 +85,7 @@ const Services = () => {
               <p className="u-align-left u-custom-font u-font-raleway lead">
                 <span className="font-weight-bold">Substrate Production</span>{' '}
                 <br /> We provide substrates for local mushroom farmers at
-                affordable prices to grow their business
+                affordable prices to grow their business.
               </p>
             </div>
             <div className="col-md-6 mt-5">
@@ -108,7 +107,7 @@ const Services = () => {
                 product that is sold in cold stores across Kumasi. For bulk
                 orders, see our contact info. We also provide order services for
                 food joints that need bulk fresh mushroom supply to run their
-                business
+                business.
               </p>
             </div>
           </div>
@@ -129,7 +128,7 @@ const Services = () => {
               <p className="u-align-left u-custom-font u-font-raleway lead">
                 <span className="font-weight-bold">Fresh Snail</span> <br /> We
                 provide order and delivery for bulk purchase of fresh snails in
-                Sunyani, Kumasi and Accra
+                Sunyani, Kumasi and Accra.
               </p>
             </div>
             <div className="col-md-6 mt-5">
@@ -168,7 +167,7 @@ const Services = () => {
               <p className="u-align-left u-custom-font u-font-raleway lead">
                 <span className="font-weight-bold">Frozen goat meat</span>{' '}
                 <br /> We provide substrates for local mushroom farmers at
-                affordable prices to grow their business
+                affordable prices to grow their business.
               </p>
             </div> */}
             <div className="col-md-6 mt-5">
@@ -186,7 +185,7 @@ const Services = () => {
                 <span className="font-weight-bold">Live healthy goats</span>{' '}
                 <br /> We provide order and delivery of live goats in the
                 Sunyani area. We also fulfill order and delivery service of
-                processed goat meat in Accra, Kumasi and Sunyani
+                processed goat meat in Accra, Kumasi and Sunyani.
               </p>
             </div>
           </div>

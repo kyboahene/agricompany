@@ -3,13 +3,13 @@ import { motion } from 'framer-motion'
 
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
-import '../home.css'
+import '../css/home.css'
 import Team from '../components/team'
 
-import Image from '../images/ttt-min.jpg'
+import Image from '../images/image.jpg'
 import Mushroom from '../images/fungus-1194380_1920.jpg'
-import Snail from '../images/snail-2335758_1920.jpg'
-import Goat from '../images/goat-4884605_1920.jpg'
+import Snail from '../images/photo.jpg'
+import Goat from '../images/goat1.jpg'
 import Animals from '../images/goats-2052733_1920.jpg'
 import Plants from '../images/plants.jpg'
 import Affordable from '../images/affordable.jpg'
@@ -45,7 +45,10 @@ const Home = () => {
                   id="forMobile"
                 >
                   <div className="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
-                    <h5 className="u-align-center u-custom-font u-font-raleway u-text u-text-1">
+                    <h5
+                      className="u-align-center u-custom-font u-font-raleway u-text u-text-1"
+                      style={{ zIndex: '10' }}
+                    >
                       Welcome to TIES Agric
                     </h5>
                     <div
@@ -58,12 +61,12 @@ const Home = () => {
                       <br />
                     </p>
                     <a
-                      href="http://webneel.com/30-incredible-and-award-winning-fashion-photography-cergelyte-khokhlov-and-witzel"
+                      href="/about"
                       className="u-align-center u-btn u-button-style u-btn-1"
                       title="learn more"
                       target="_blank"
                       rel="noreferrer"
-                      style={{ backgroundColor: '#804832' }}
+                      style={{ backgroundColor: '#507736' }}
                     >
                       learn more
                     </a>
@@ -93,7 +96,7 @@ const Home = () => {
                   <div className="u-container-layout">
                     <div
                       className="u-shape u-shape-rectangle u-shape-1"
-                      style={{ backgroundColor: '#804832' }}
+                      style={{ backgroundColor: '#507736' }}
                     ></div>
                     <div className="u-container-style u-group u-image u-image-tiles u-image-2">
                       <div className="u-container-layout u-container-layout-3"></div>
@@ -110,7 +113,7 @@ const Home = () => {
       <section
         className="u-align-center u-clearfix u-section-2"
         id="sec-0d7f"
-        style={{ backgroundColor: '#804832', color: '#fff' }}
+        style={{ backgroundColor: '#507736', color: '#fff' }}
       >
         <div className="u-clearfix u-sheet u-sheet-1">
           <h1 className="u-custom-font u-font-raleway u-text u-text-1">
@@ -129,7 +132,7 @@ const Home = () => {
             <div className="u-repeater u-repeater-1">
               <div
                 className="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-list-item-1"
-                style={{ backgroundColor: '#935E43', color: '#fff' }}
+                style={{ backgroundColor: '#7EA44B', color: '#fff' }}
               >
                 <div className="u-container-layout u-similar-container u-container-layout-1 ">
                   <img
@@ -148,7 +151,7 @@ const Home = () => {
               </div>
               <div
                 className="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2"
-                style={{ backgroundColor: '#935E43', color: '#fff' }}
+                style={{ backgroundColor: '#7EA44B', color: '#fff' }}
               >
                 <div className="u-container-layout u-similar-container u-container-layout-2">
                   <img
@@ -166,7 +169,7 @@ const Home = () => {
               </div>
               <div
                 className="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-list-item-3"
-                style={{ backgroundColor: '#935E43', color: '#fff' }}
+                style={{ backgroundColor: '#7EA44B', color: '#fff' }}
               >
                 <div className="u-container-layout u-similar-container u-container-layout-3">
                   <img
@@ -190,7 +193,7 @@ const Home = () => {
       <section className="u-clearfix u-section-4" id="sec-b17a">
         <div className="u-clearfix u-sheet u-sheet-1">
           <h1 className="u-align-left-xs u-text u-text-default-xl u-text-1">
-            Know About Our History
+            Our History
           </h1>
           <div
             alt=""
@@ -315,7 +318,7 @@ const Home = () => {
 
       <section
         className="container-fluid"
-        style={{ backgroundColor: '#B88B64', color: '#fff' }}
+        style={{ backgroundColor: '#7EA44B', color: '#fff' }}
       >
         <div className="container">
           <div className="row pt-5">
@@ -373,7 +376,7 @@ const Home = () => {
       {/* Client Reviews Begins */}
       <section
         className="container-fluid"
-        style={{ backgroundColor: '#CBA289', color: '#fff' }}
+        style={{ backgroundColor: '#9BBC49', color: '#fff' }}
       >
         <div className="container py-5">
           <div className="row justify-content-center pt-3">

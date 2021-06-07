@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import '../contact.css'
+import '../css/contact.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
@@ -36,7 +36,7 @@ const contact = () => {
       <section
         className="u-align-center u-clearfix  u-section-22"
         id="sec-c2b3"
-        style={{ backgroundColor: '#CBA289', color: '#000' }}
+        style={{ backgroundColor: '#9BBC49', color: '#000' }}
       >
         <div className="u-clearfix u-sheet u-sheet-12">
           <h1 className="u-align-left-md u-align-left-sm u-align-left-xs u-custom-font u-font-raleway u-text u-text-12">
@@ -124,9 +124,10 @@ const contact = () => {
               <div className="u-align-left u-form-group u-form-submit">
                 <a
                   href="#n"
-                  className="u-btn u-btn-submit u-button-style u-custom-font u-font-raleway u-palette-2-dark-1 u-btn-12"
+                  className="u-btn u-btn-submit u-button-style u-custom-font u-font-raleway u-btn-12"
+                  style={{ backgroundColor: "#507736"}}
                 >
-                  Submit
+                  SUBMIT
                 </a>
                 <input
                   type="submit"

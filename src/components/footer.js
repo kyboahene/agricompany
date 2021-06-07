@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
-import Image from '../images/default-logo.png'
 import BrandAfrik from '../images/dev_logo.svg'
 
 const Footer = () => {

@@ -3,13 +3,9 @@ import { motion } from 'framer-motion'
 
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
-import '../about.css'
-import Team from '../components/team'
+import '../css/about.css'
 import Gallery from '../components/gallery'
-
 import Vision from '../images/vision.svg'
-import Mission from '../images/mission.svg'
-
 import Image from '../images/3.jpg'
 
 const About = () => {
@@ -79,7 +75,7 @@ const About = () => {
       <section
         className="u-clearfix u-section-31"
         id="sec-e723"
-        style={{ backgroundColor: '#804832', color: '#fff' }}
+        style={{ backgroundColor: '#507736', color: '#fff' }}
       >
         <div className="u-clearfix u-sheet u-valign-middle u-sheet-11">
           <div className="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-11">
@@ -99,10 +95,8 @@ const About = () => {
                 </div>
                 <div
                   className="u-container-style u-image u-layout-cell u-right-cell u-size-26 u-image-11"
-                  src=""
-                  data-image-width="1920"
-                  data-image-height="1278"
                   data-aos="fade-right"
+                  data-aos-duration="1500"
                 >
                   <div className="u-container-layout u-container-layout-21"></div>
                 </div>
@@ -179,7 +173,7 @@ const About = () => {
       {/* Team Begins */}
       <section
         className="container-fluid"
-        style={{ backgroundColor: '#CBA289', color: '#fff' }}
+        style={{ backgroundColor: '#507736', color: '#fff' }}
       >
         <div className="container pb-5">
           <div className="row d-flex justify-content-center py-5">
@@ -296,13 +290,6 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* <div className="row d-flex justify-content-center pb-5">
-            <div className="col-md-3 text-center">
-              <a href="/about" className="mybutton" rel="noreferrer">
-                <span>SEE MORE</span>
-              </a>
-            </div>
-          </div> */}
         </div>
       </section>
       {/* Team Ends */}
