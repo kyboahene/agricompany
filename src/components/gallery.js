@@ -12,30 +12,30 @@ const Gallery = () => {
   return (
     <section className="container-fluid gallery">
       <div className="row">
-        <div className="col-md-3 p-0">
+        <div className="col-md-3 col-sm-6 p-0">
           <img src={Image} className="img-fluid" alt="" />
         </div>
-        <div className="col-md-3 p-0">
+        <div className="col-md-3 col-sm-6 p-0">
           <img src={Mushroom} className="img-fluid" alt="" />
         </div>
-        <div className="col-md-3 p-0">
+        <div className="col-md-3 col-sm-6  p-0">
           <img src={Snail} className="img-fluid" alt="" />
         </div>
-        <div className="col-md-3 p-0">
+        <div className="col-md-3 col-sm-6 p-0">
           <img src={MushSubstrate} className="img-fluid" alt="" />
         </div>
       </div>
       <div className="row">
-        <div className="col-md-3 p-0">
+        <div className="col-md-3 col-sm-6 p-0">
           <img src={Goat} className="img-fluid" alt="" />
         </div>
-        <div className="col-md-3 p-0">
+        <div className="col-md-3 col-sm-6 p-0">
           <img src={Animals} className="img-fluid" alt="" />
         </div>
-        <div className="col-md-3 p-0">
+        <div className="col-md-3 col-sm-6 p-0">
           <img src={Affordable} className="img-fluid" alt="" />
         </div>
-        <div className="col-md-3 p-0">
+        <div className="col-md-3 col-sm-6 p-0">
           <img src={Image} className="img-fluid" alt="" />
         </div>
       </div>

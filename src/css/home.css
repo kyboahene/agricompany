@@ -249,7 +249,7 @@ ul {
 @media (max-width: 991px) {
   #what_we_do img {
     width: 400px !important;
-    height: 250px !important;
+    height: 350px !important;
   }
 
   #what_we_do .col-md-3 {
@@ -298,6 +298,7 @@ ul {
 }
 
 @media (max-width: 767px) {
+  
   .col-md-4 .overlay {
     width: 39%;
     height: 74%;
@@ -305,7 +306,7 @@ ul {
   }
 
   .u-section-1 .u-sheet-1 {
-    min-height: 1354px;
+    min-height: 1154px;
   }
 
   .u-section-1 .u-layout-wrap-1 {
@@ -314,7 +315,7 @@ ul {
   }
 
   .u-section-1 .u-layout-cell-1 {
-    min-height: 613px;
+    min-height: 49px;
   }
 
   .u-section-1 .u-text-2 {
@@ -458,6 +459,10 @@ ul {
 
   .u-section-2 .u-text-2 {
     width: 540px;
+  }
+
+   .u-section-2 {
+    min-height: 550px;
   }
 }
 
@@ -681,7 +686,7 @@ ul {
 .u-section-4 .u-image-1 {
   width: 436px;
   height: 436px;
-  background-image: url('../images/image4.jpg');
+  background-image: url('../images/holdingsnails.JPG');
   background-position: 50% 50%;
   animation-duration: 1500ms;
   margin: -94px auto 0 54px;

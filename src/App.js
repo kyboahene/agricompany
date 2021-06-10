@@ -7,6 +7,7 @@ import About from './pages/about'
 import Contact from './pages/contact'
 import Home from './pages/home'
 import Services from './pages/services'
+import ScrollTotop from './components/scrollTotop'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -40,6 +41,7 @@ function App() {
       ) : (
         <AnimatePresence exitBeforeEnter>
           <BrowserRouter>
+            {/* <ScrollTotop scrollStepInPx="50" delayInMs="30" /> */}
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />

@@ -91,7 +91,8 @@ const Footer = () => {
               Contact
             </h6>
             <p>
-              <i className="fas fa-home me-3"></i> New York, NY 10012, US
+              <i className="fas fa-home me-3"></i> Abuosu, Sunyani.  <br/>
+Behind JUSAG village
             </p>
             <p>
               <i className="fas fa-envelope me-3"></i>

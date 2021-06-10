@@ -7,6 +7,8 @@ import '../css/about.css'
 import Gallery from '../components/gallery'
 import Vision from '../images/vision.svg'
 import Image from '../images/3.jpg'
+import Micheal from '../images/Micheal.jpg'
+import Oppong from '../images/Oppong.jpg'
 
 const About = () => {
   const [page, setPage] = useState('Home')
@@ -223,8 +225,8 @@ const About = () => {
             </div>
             <div className="col-md-4">
               <img
-                src={Image}
-                className="img-fluid rounded-circle"
+                src={Micheal}
+                className="img-fluid rounded-circle member_image"
                 alt=""
                 data-aos="fade-up"
                 data-aos-duration="1500"
@@ -257,8 +259,8 @@ const About = () => {
             </div>
             <div className="col-md-4">
               <img
-                src={Image}
-                className="img-fluid rounded-circle"
+                src={Oppong}
+                className="img-fluid rounded-circle member_image"
                 alt=""
                 data-aos="fade-up"
                 data-aos-duration="1500"

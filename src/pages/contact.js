@@ -150,9 +150,8 @@ const contact = () => {
             Address:
           </h4>
           <p className="u-align-left u-custom-font u-font-raleway u-text u-text-42">
-            54B Sakumono Street 54356,
-            <br />
-            La City, IA 3546646.
+             Abuosu, Sunyani.  <br/>
+              Behind JUSAG village
           </p>
           <h4 className="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-text u-text-52">
             Phone:
@@ -171,17 +170,11 @@ const contact = () => {
 
       {/* Map */}
       <section
-        className="u-clearfix u-grey-light-2 u-typography-custom-page-typography-12--Map u-section-32"
+        className="container-fluid"
         id="sec-a4f9"
       >
-        <div className="u-expanded-lg u-expanded-md u-expanded-width-sm u-expanded-width-xs u-expanded-xl u-grey-light-2 u-map u-map-12">
-          <div className="embed-responsive">
-            <iframe
-              className="embed-responsive-item"
-              src="//maps.google.com/maps?output=embed&amp;q=Manhattan&amp;t=m"
-              data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyTWFuaGF0dGFuJTIyJTJDJTIyem9vbSUyMiUzQTAlMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQW51bGwlMkMlMjJhcGlLZXklMjIlM0FudWxsJTJDJTIybWFya2VycyUyMiUzQSU1QiU1RCU3RA=="
-            ></iframe>
-          </div>
+        <div className="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2058.7250244453157!2d-2.3121095028924916!3d7.33774380058029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdacf2948671391%3A0xb6cac72b91017af!2sSunyani!5e0!3m2!1sen!2sgh!4v1623092259956!5m2!1sen!2sgh" width="2000" height="600" style={{border: 0 }} allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
       {/* Footer Begins */}

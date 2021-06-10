@@ -64,7 +64,6 @@ const Home = () => {
                       href="/about"
                       className="u-align-center u-btn u-button-style u-btn-1"
                       title="learn more"
-                      target="_blank"
                       rel="noreferrer"
                       style={{ backgroundColor: '#507736' }}
                     >
