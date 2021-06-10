@@ -11,10 +11,14 @@
   font-family: 'Raleway';     
 }
 
+.nav-item .nav-link{
+  color: #000;
+}
+
 .nav-item .nav-link:hover,
 .nav-item .nav-link:active {
   color: #507736;
-  border-bottom: 2px #507736 solid;
+  border-bottom: 1px #507736 solid;
 }
 
 

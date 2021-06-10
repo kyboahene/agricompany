@@ -32,7 +32,7 @@ const Team = ({ page }) => {
               Abdallah Salia
             </h4>
             <p className="my-0">CO-Founder</p>
-            <div className="overlay">
+            {/* <div className="overlay">
               <div className="middle">
                 <div className="d-flex">
                   <a href="" className="me-4 text-reset">
@@ -52,7 +52,7 @@ const Team = ({ page }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="col-md-4">
             <img
@@ -66,7 +66,7 @@ const Team = ({ page }) => {
               Michael Osei Twene
             </h4>
             <p className="my-0">CO-Founder</p>
-            <div className="overlay">
+            {/* <div className="overlay">
               <div className="middle">
                 <div className="d-flex">
                   <a href="" className="me-4 text-reset">
@@ -86,7 +86,7 @@ const Team = ({ page }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="col-md-4">
             <img
@@ -98,7 +98,7 @@ const Team = ({ page }) => {
             />
             <h4 className="mb-0 u-custom-font u-font-raleway">Oppong Kwame</h4>
             <p className="my-0">Farm Manager</p>
-            <div className="overlay">
+            {/* <div className="overlay">
               <div className="middle">
                 <div className="d-flex">
                   <a href="" className="me-4 text-reset">
@@ -118,7 +118,7 @@ const Team = ({ page }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {page === 'Home' ? (

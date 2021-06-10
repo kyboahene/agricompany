@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Image from '../images/agric.png'
+import Image from '../images/favicon.png'
 
 const Navbar = () => {
   const pages = ['Home', 'About', 'Services', 'Contact']
@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar p-0 navbar-expand-lg navbar-light scrolling-navbar">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <img src={Image} height="30" alt="" />
+          <img src={Image} height="50" alt="" />
         </a>
         <button
           className="navbar-toggler"
@@ -30,20 +30,26 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            {pages.map((page) => {
-              return (
-                <li className="nav-item mx-4">
-                  <a
-                    className="nav-link"
-                    id={page}
-                    href="/"
-                    onClick={() => addActive(page)}
-                  >
-                    {page}
-                  </a>
-                </li>
-              )
-            })}
+            <li className="nav-item mx-4">
+              <a className="nav-link" href="/">
+                Home
+              </a>
+            </li>
+            <li className="nav-item mx-4">
+              <a className="nav-link" href="/about">
+                About
+              </a>
+            </li>
+            <li className="nav-item mx-4">
+              <a className="nav-link" href="/services">
+                Services
+              </a>
+            </li>
+            <li className="nav-item mx-4">
+              <a className="nav-link" href="/contact-us">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </div>

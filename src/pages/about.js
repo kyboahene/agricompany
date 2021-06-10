@@ -201,7 +201,7 @@ const About = () => {
                 Abdallah Salia
               </h4>
               <p className="my-0">CO-Founder</p>
-              <div className="overlay">
+              {/* <div className="overlay">
                 <div className="middle">
                   <div className="d-flex">
                     <a href="" className="me-4 text-reset">
@@ -221,7 +221,7 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="col-md-4">
               <img
@@ -235,7 +235,7 @@ const About = () => {
                 Michael Osei Twene
               </h4>
               <p className="my-0">CO-Founder</p>
-              <div className="overlay">
+              {/* <div className="overlay">
                 <div className="middle">
                   <div className="d-flex">
                     <a href="" className="me-4 text-reset">
@@ -255,7 +255,7 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="col-md-4">
               <img
@@ -269,7 +269,7 @@ const About = () => {
                 Oppong Kwame
               </h4>
               <p className="my-0">Farm Manager</p>
-              <div className="overlay">
+              {/* <div className="overlay">
                 <div className="middle">
                   <div className="d-flex">
                     <a href="" className="me-4 text-reset">
@@ -289,7 +289,7 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

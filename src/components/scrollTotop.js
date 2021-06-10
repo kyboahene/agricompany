@@ -37,9 +37,7 @@ const ScrollTotop = () => {
       return (
         <div className="moveUp">
           <span>
-            <i className="fas fa-angle-double" onClick={() => scrollTop()}>
-              eetew
-            </i>
+            <i className="fas fa-angle-up" onClick={() => scrollTop()}></i>
           </span>
         </div>
       )
