@@ -41,7 +41,7 @@ function App() {
       ) : (
         <AnimatePresence exitBeforeEnter>
           <BrowserRouter>
-            {/* <ScrollTotop scrollStepInPx="50" delayInMs="30" /> */}
+            <ScrollTotop scrollStepInPx="30" delayInMs="10" />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
