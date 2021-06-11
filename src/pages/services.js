@@ -48,7 +48,7 @@ const Services = () => {
       >
         <div className="container">
           <div className="row d-flex justify-content-center align-items-center">
-            <div className="col-md-6 text-center col-sm-3">
+            <div className="col-md-6 text-center col-sm-12">
               <h1 class=" u-custom-font u-font-raleway font-weight-bold">
                 What We Do
               </h1>
