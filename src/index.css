@@ -16,7 +16,7 @@
 }
 
 .nav-item .nav-link:hover,
-.nav-item .nav-link:active {
+.active {
   color: #507736;
   border-bottom: 1px #507736 solid;
 }

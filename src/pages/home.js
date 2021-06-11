@@ -15,6 +15,7 @@ import Plants from '../images/plants.jpg'
 import Affordable from '../images/affordable.jpg'
 import mushroom1 from '../images/mushroom-576462.svg'
 import Snail1 from '../images/snail-2594139.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const [page, setPage] = useState('Home')
@@ -60,15 +61,15 @@ const Home = () => {
                       sustainable food production and processing in Africa{' '}
                       <br />
                     </p>
-                    <a
-                      href="/about"
+                    <Link
+                      to="/about"
                       className="u-align-center u-btn u-button-style u-btn-1"
                       title="learn more"
                       rel="noreferrer"
                       style={{ backgroundColor: '#507736' }}
                     >
                       learn more
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div
@@ -216,9 +217,9 @@ const Home = () => {
           </p>
           <div className="row justify-content-center mb-5" id="customRow">
             <div className="col-md-12 col-sm-12 text-center">
-              <a href="/about" className="mybutton" rel="noreferrer">
+              <Link to="/about" className="mybutton">
                 <span>READ MORE</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -307,9 +308,9 @@ const Home = () => {
           </div>
           <div className="row justify-content-center mb-5">
             <div className="col-md-3 col-sm-6 col-lg-6 text-center">
-              <a href="/services" className="mybutton" rel="noreferrer">
+              <Link to="/services" className="mybutton">
                 <span>READ MORE</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -463,12 +464,12 @@ const Home = () => {
                     ></textarea>
                   </div>
                   <div className="u-align-center u-form-group u-form-submit">
-                    <a
-                      href="#n"
+                    <Link
+                      to="#n"
                       className="mybutton u-button-style u-custom-font u-font-raleway u-btn-12"
                     >
                       <span>Submit</span>
-                    </a>
+                    </Link>
                     <input
                       type="submit"
                       value="submit"

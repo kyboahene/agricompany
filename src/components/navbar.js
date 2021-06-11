@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import Image from '../images/favicon.png'
 
@@ -31,24 +32,41 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item mx-4">
-              <a className="nav-link" href="/">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                exact
+                to="/"
+              >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item mx-4">
-              <a className="nav-link" href="/about">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                to="/about"
+              >
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item mx-4">
-              <a className="nav-link" href="/services">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                to="/services"
+              >
                 Services
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item mx-4">
-              <a className="nav-link" href="/contact-us">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                to="/contact-us"
+              >
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

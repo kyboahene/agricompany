@@ -7,8 +7,6 @@ const ScrollTotop = () => {
   const listenScrollEvent = () => {
     if (window.scrollY > 170) {
       setPosition(true)
-    } else {
-      setPosition(false)
     }
   }
 
@@ -37,7 +35,7 @@ const ScrollTotop = () => {
       return (
         <div className="moveUp">
           <span>
-            <i className="fas fa-angle-up" onClick={() => scrollTop()}></i>
+            <i className="fas fa-angle-double" onClick={() => scrollTop()}></i>
           </span>
         </div>
       )

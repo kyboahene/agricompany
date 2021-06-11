@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import BrandAfrik from '../images/dev_logo.svg'
 
@@ -66,24 +67,24 @@ const Footer = () => {
               Useful links
             </h6>
             <p>
-              <a href="/" className="text-reset">
+              <Link to="/" className="text-reset">
                 Home
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="/about" className="text-reset">
+              <Link to="/about" className="text-reset">
                 About
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="/services" className="text-reset">
+              <Link to="/services" className="text-reset">
                 Services
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="/contact-us" className="text-reset">
+              <Link to="/contact-us" className="text-reset">
                 Contact Us
-              </a>
+              </Link>
             </p>
           </div>
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -91,8 +92,8 @@ const Footer = () => {
               Contact
             </h6>
             <p>
-              <i className="fas fa-home me-3"></i> Abuosu, Sunyani.  <br/>
-Behind JUSAG village
+              <i className="fas fa-home me-3"></i> Abuosu, Sunyani. <br />
+              Behind JUSAG village
             </p>
             <p>
               <i className="fas fa-envelope me-3"></i>
