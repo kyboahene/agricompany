@@ -16,7 +16,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 2000)
   }, [])
 
   return (
@@ -41,7 +41,7 @@ function App() {
       ) : (
         <AnimatePresence exitBeforeEnter>
           <BrowserRouter>
-            <ScrollTotop />
+            <ScrollTotop showBelow={250} />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />

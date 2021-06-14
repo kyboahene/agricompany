@@ -96,15 +96,14 @@ const Footer = () => {
               Behind JUSAG village
             </p>
             <p>
-              <i className="fas fa-envelope me-3"></i>
-              info@example.com
+              <a href="mailto:saliaabdallah16@gmail.com">
+                <i className="fas fa-envelope me-3"></i>
+                saliaabdallah16@gmail.com
+              </a>
             </p>
-            <p>
-              <i className="fas fa-phone me-3"></i> + 233 54 726 4511
-            </p>
-            <p>
-              <i className="fas fa-print me-3"></i> + 01 234 567 89
-            </p>
+            <a href="tel:+1 860 759-6709">
+              <i className="fas fa-phone me-3"></i> +1 (860) 759-6709
+            </a>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
-import Image from '../images/3.jpg'
 import Micheal from '../images/Micheal.jpg'
 import Oppong from '../images/Oppong.jpg'
+import Abdullah from '../images/Abdullah.png'
 
 const Team = ({ page }) => {
   return (
@@ -22,7 +22,7 @@ const Team = ({ page }) => {
         <div className="row text-center py-5">
           <div className="col-md-4">
             <img
-              src={Image}
+              src={Abdullah}
               className="img-fluid rounded-circle member_image"
               alt=""
               data-aos="fade-up"
@@ -32,27 +32,6 @@ const Team = ({ page }) => {
               Abdallah Salia
             </h4>
             <p className="my-0">CO-Founder</p>
-            {/* <div className="overlay">
-              <div className="middle">
-                <div className="d-flex">
-                  <a href="" className="me-4 text-reset">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset mx-3">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset ">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset mx-3">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-            </div> */}
           </div>
           <div className="col-md-4">
             <img

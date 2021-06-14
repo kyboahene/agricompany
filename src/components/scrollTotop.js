@@ -1,48 +1,36 @@
 import React, { useEffect, useState } from 'react'
 
-const ScrollTotop = () => {
-  const [interval, setInterval] = useState(0)
-  const [position, setPosition] = useState(false)
+const ScrollTotop = ({ showBelow }) => {
+  const [show, setShow] = useState(showBelow ? false : true)
 
-  const listenScrollEvent = () => {
-    if (window.scrollY > 170) {
-      setPosition(true)
+  const handleScroll = () => {
+    if (window.pageYOffset > showBelow) {
+      if (!show) setShow(true)
+    } else {
+      if (show) setShow(false)
     }
   }
 
   useEffect(() => {
-    document.addEventListener(
-      'scroll',
-      listenScrollEvent,
-      window.scrollTo(0, 0),
-    )
+    if (showBelow) {
+      window.addEventListener(`scroll`, handleScroll)
+      return () => window.removeEventListener(`scroll`, handleScroll)
+    }
   })
 
-  const onscrollStep = () => {
-    if (window.pageYOffset === 0) {
-      clearInterval(interval)
-    }
-    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx)
-  }
-
   const scrollTop = () => {
-    let intervalId = setInterval(onscrollStep, this.props.delayInMs)
-    setInterval(intervalId)
+    window[`scrollTo`]({ top: 0, behavior: `smooth` })
   }
 
-  const goTopIcon = () => {
-    if (position) {
-      return (
-        <div className="moveUp">
-          <span>
-            <i className="fas fa-angle-double" onClick={() => scrollTop()}></i>
-          </span>
-        </div>
-      )
-    }
-  }
-
-  return <>{goTopIcon()}</>
+  return show ? (
+    <div className="moveUp">
+      <span>
+        <i className="fas fa-angle-up 9x" onClick={() => scrollTop()}></i>
+      </span>
+    </div>
+  ) : (
+    ''
+  )
 }
 
 export default ScrollTotop

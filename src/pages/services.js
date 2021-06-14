@@ -12,6 +12,7 @@ import Snail from '../images/image1.jpg'
 import snailIcon from '../images/snail-710086.svg'
 import Goat from '../images/goat.jpg'
 import goatIcon from '../images/female-48385.svg'
+import { Helmet } from 'react-helmet'
 
 const Services = () => {
   return (
@@ -21,6 +22,9 @@ const Services = () => {
       initial={{ opacity: 0 }}
       className="u-body u-overlap"
     >
+      <Helmet>
+        <title>Services - TIES Agric</title>
+      </Helmet>
       {/* Navbar Begins */}
       <Navbar />
       {/* Navbar Ends */}

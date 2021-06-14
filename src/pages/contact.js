@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import '../css/contact.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import { Helmet } from 'react-helmet'
 
 const contact = () => {
   return (
@@ -12,6 +13,9 @@ const contact = () => {
       initial={{ opacity: 0 }}
       className="u-body u-overlap"
     >
+      <Helmet>
+        <title>Contact - TIES Agric</title>
+      </Helmet>
       {/* Navbar Begins */}
       <Navbar />
       {/* Navbar Ends */}
@@ -125,7 +129,7 @@ const contact = () => {
                 <a
                   href="#n"
                   className="u-btn u-btn-submit u-button-style u-custom-font u-font-raleway u-btn-12"
-                  style={{ backgroundColor: "#507736"}}
+                  style={{ backgroundColor: '#507736' }}
                 >
                   SUBMIT
                 </a>
@@ -150,8 +154,8 @@ const contact = () => {
             Address:
           </h4>
           <p className="u-align-left u-custom-font u-font-raleway u-text u-text-42">
-             Abuosu, Sunyani.  <br/>
-              Behind JUSAG village
+            Abuosu, Sunyani. <br />
+            Behind JUSAG village
           </p>
           <h4 className="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-text u-text-52">
             Phone:
@@ -169,12 +173,16 @@ const contact = () => {
       </section>
 
       {/* Map */}
-      <section
-        className="container-fluid"
-        id="sec-a4f9"
-      >
+      <section className="container-fluid" id="sec-a4f9">
         <div className="row">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2058.7250244453157!2d-2.3121095028924916!3d7.33774380058029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdacf2948671391%3A0xb6cac72b91017af!2sSunyani!5e0!3m2!1sen!2sgh!4v1623092259956!5m2!1sen!2sgh" width="2000" height="600" style={{border: 0 }} allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2058.7250244453157!2d-2.3121095028924916!3d7.33774380058029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdacf2948671391%3A0xb6cac72b91017af!2sSunyani!5e0!3m2!1sen!2sgh!4v1623092259956!5m2!1sen!2sgh"
+            width="2000"
+            height="600"
+            style={{ border: 0 }}
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
       {/* Footer Begins */}

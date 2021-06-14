@@ -16,6 +16,7 @@ import Affordable from '../images/affordable.jpg'
 import mushroom1 from '../images/mushroom-576462.svg'
 import Snail1 from '../images/snail-2594139.png'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
   const [page, setPage] = useState('Home')
@@ -27,6 +28,13 @@ const Home = () => {
       initial={{ opacity: 0 }}
       className="u-body u-overlap"
     >
+      <Helmet>
+        <title>Home - TIES Agric</title>
+        <meta
+          name="description"
+          content="A technology driven business that pioneers sustainable food production and processing in Africa"
+        ></meta>
+      </Helmet>
       {/* Navbar Begins */}
       <Navbar />
       {/* Navbar Ends */}

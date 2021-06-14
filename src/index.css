@@ -7,15 +7,16 @@
 
 /**Navbar**/
 .navbar{   
-  background: none;
+  background: transparent;
   font-family: 'Raleway';     
 }
 
-.nav-item .nav-link{
+.nav-item .t-nav-link{
   color: #000;
 }
 
-.nav-item .nav-link:hover,
+
+.nav-item .t-nav-link:hover,
 .active {
   color: #507736;
   border-bottom: 1px #507736 solid;
@@ -39,10 +40,28 @@
   right: 0;
   z-index: 30;
   text-align: center;
-  height: 45px;
-  line-height: 46px;
+  height: 25px;
+  /* line-height: 46px; */
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background: #3E8739;
+  border-radius: 50%;
+  padding: 0.5em 1em 2.3em;
+}
+
+.moveUp i {
+  font-size: 1.6em;
+  color: #fff;
+}
+
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #cdcdcd;
 }
 
 .fr-clearfix::after {
@@ -34503,6 +34522,10 @@ blockquote {
   }
 }
 @media (max-width: 767px) {
+  .navbar{
+    background: #fff;
+  }
+
   .u-header .u-image-14 {
     width: auto;
   }

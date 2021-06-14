@@ -1,21 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import Image from '../images/favicon.png'
+import Image from '../images/agric.png'
 
 const Navbar = () => {
-  const pages = ['Home', 'About', 'Services', 'Contact']
-
-  const addActive = (page) => {
-    const navlink = document.getElementById(page)
-    navlink.classList.toggle('active')
-  }
-
   return (
-    <nav className="navbar p-0 navbar-expand-lg navbar-light scrolling-navbar">
+    <nav className="navbar p-0 navbar-expand-lg navbar-light u-header">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <img src={Image} height="50" alt="" />
+          <img src={Image} height="30" alt="" />
         </a>
         <button
           className="navbar-toggler"
@@ -33,7 +26,7 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item mx-4">
               <NavLink
-                className="nav-link"
+                className="t-nav-link"
                 activeClassName="active"
                 exact
                 to="/"
@@ -43,7 +36,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-4">
               <NavLink
-                className="nav-link"
+                className="t-nav-link"
                 activeClassName="active"
                 to="/about"
               >
@@ -52,7 +45,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-4">
               <NavLink
-                className="nav-link"
+                className="t-nav-link"
                 activeClassName="active"
                 to="/services"
               >
@@ -61,7 +54,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-4">
               <NavLink
-                className="nav-link"
+                className="t-nav-link"
                 activeClassName="active"
                 to="/contact-us"
               >

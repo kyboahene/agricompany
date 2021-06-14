@@ -9,6 +9,7 @@ import Vision from '../images/vision.svg'
 import Image from '../images/3.jpg'
 import Micheal from '../images/Micheal.jpg'
 import Oppong from '../images/Oppong.jpg'
+import { Helmet } from 'react-helmet'
 
 const About = () => {
   const [page, setPage] = useState('Home')
@@ -19,6 +20,9 @@ const About = () => {
       initial={{ opacity: 0 }}
       className="u-body u-overlap"
     >
+      <Helmet>
+        <title>About - TIES Agric</title>
+      </Helmet>
       {/* Navbar Begins */}
       <Navbar />
       {/* Navbar Ends */}
