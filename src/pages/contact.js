@@ -161,13 +161,13 @@ const contact = () => {
             Phone:
           </h4>
           <p className="u-align-left u-custom-font u-font-raleway u-text u-text-62">
-            233 54 726 4511
+            +1 (860) 759-6709
           </p>
           <h4 className="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-text u-text-72">
             Email:&nbsp;
           </h4>
           <p className="u-align-left u-custom-font u-font-raleway u-text u-text-82">
-            Kyeiyaw437@gmail.com
+            saliaabdallah16@gmail.com
           </p>
         </div>
       </section>
