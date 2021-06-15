@@ -6,13 +6,12 @@ import Navbar from '../components/navbar'
 import '../css/about.css'
 import Gallery from '../components/gallery'
 import Vision from '../images/vision.svg'
-import Image from '../images/3.jpg'
+import Abdullah from '../images/Abdullah.png'
 import Micheal from '../images/Micheal.jpg'
 import Oppong from '../images/Oppong.jpg'
 import { Helmet } from 'react-helmet'
 
 const About = () => {
-  const [page, setPage] = useState('Home')
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -195,7 +194,7 @@ const About = () => {
           <div className="row text-center py-5">
             <div className="col-md-4">
               <img
-                src={Image}
+                src={Abdullah}
                 className="img-fluid rounded-circle member_image"
                 alt=""
                 data-aos="fade-up"

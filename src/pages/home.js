@@ -19,8 +19,6 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 const Home = () => {
-  const [page, setPage] = useState('Home')
-
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -42,8 +40,6 @@ const Home = () => {
       <section
         className="u-align-center u-clearfix u-image u-section-1"
         id="carousel_e025"
-        data-image-width="1024"
-        data-image-height="1024"
       >
         <div className="u-clearfix u-sheet u-sheet-1">
           <div className="u-clearfix u-expanded-width u-gutter-42 u-layout-wrap u-layout-wrap-1">
@@ -198,7 +194,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="u-clearfix u-section-4" id="sec-b17a">
+      <section className="container u-clearfix u-section-4" id="sec-b17a">
         <div className="u-clearfix u-sheet u-sheet-1">
           <h1 className="u-align-left-xs u-text u-text-default-xl u-text-1">
             Our History
@@ -206,12 +202,6 @@ const Home = () => {
           <div
             alt=""
             className="u-image u-image-circle u-image-1"
-            data-image-width="980"
-            data-image-height="736"
-            data-animation-name="fadeIn"
-            data-animation-duration="1500"
-            data-animation-delay="0"
-            data-animation-direction="Left"
             data-aos="fade-in"
             data-aos-duration="1500"
           ></div>
@@ -236,8 +226,6 @@ const Home = () => {
       <section
         className="u-clearfix u-image u-shading u-section-5"
         id="sec-f253"
-        data-image-width="1920"
-        data-image-height="1280"
       >
         <div className="u-clearfix u-sheet u-valign-middle u-sheet-1">
           <h1 className="u-align-center u-text u-text-1">Our Vision</h1>
@@ -252,7 +240,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="container-fluid what_we_do">
+      {/* <section className="what_we_do" style={{ border: '1px red solid' }}>
         <div
           className="container u-custom-font u-font-raleway pt-5"
           id="what_we_do"
@@ -322,7 +310,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section
         className="container-fluid"
@@ -378,7 +366,7 @@ const Home = () => {
       </section>
 
       {/* Our Team */}
-      <Team page={page} />
+      <Team />
       {/* Our Team */}
 
       {/* Client Reviews Begins */}
