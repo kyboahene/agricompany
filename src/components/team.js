@@ -45,27 +45,6 @@ const Team = ({ page }) => {
               Michael Osei Twene
             </h4>
             <p className="my-0">CO-Founder</p>
-            {/* <div className="overlay">
-              <div className="middle">
-                <div className="d-flex">
-                  <a href="" className="me-4 text-reset">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset mx-3">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset ">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset mx-3">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-            </div> */}
           </div>
           <div className="col-md-4">
             <img
@@ -77,40 +56,15 @@ const Team = ({ page }) => {
             />
             <h4 className="mb-0 u-custom-font u-font-raleway">Oppong Kwame</h4>
             <p className="my-0">Farm Manager</p>
-            {/* <div className="overlay">
-              <div className="middle">
-                <div className="d-flex">
-                  <a href="" className="me-4 text-reset">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset mx-3">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset ">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset mx-3">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="" className="me-4 text-reset">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
-        {page === 'Home' ? (
-          <div className="row d-flex justify-content-center pb-5">
-            <div className="col-md-3 text-center">
-              <a href="/about" className="mybutton" rel="noreferrer">
-                <span>SEE MORE</span>
-              </a>
-            </div>
+        <div className="row d-flex justify-content-center pb-5">
+          <div className="col-md-3 text-center">
+            <a href="/about" className="mybutton" rel="noreferrer">
+              <span>SEE MORE</span>
+            </a>
           </div>
-        ) : (
-          ''
-        )}
+        </div>
       </div>
     </section>
   )
