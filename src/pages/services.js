@@ -8,6 +8,8 @@ import Navbar from '../components/navbar'
 import mushIcon from '../images/mushroom-29738.svg'
 import Mushroom from '../images/mushrooms.jpg'
 import MushSubstrate from '../images/image2.jpg'
+import Ecomush from '../images/ecomush.jpg'
+import EcoMain from '../images/EcomushMain.jpg'
 import Snail from '../images/image1.jpg'
 import snailIcon from '../images/snail-710086.svg'
 import Goat from '../images/goat.jpg'
@@ -104,14 +106,36 @@ const Services = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center p-5">
               <p className="u-align-left u-custom-font u-font-raleway lead">
+                <span className="font-weight-bold">Bulk Mushroom Supply</span>{' '}
+                <br /> We provide order services for food joints that need bulk
+                fresh mushroom supply to run their business.
+              </p>
+            </div>
+            <div className="col-md-6 mt-5">
+              <img
+                src={EcoMain}
+                alt=""
+                className="img-fluid rounded"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                style={{ height: '400px', objectFit: 'cover' }}
+              />
+            </div>
+            <div className="col-md-6 d-flex justify-content-center align-items-center p-5">
+              <p className="u-align-left u-custom-font u-font-raleway lead">
                 <span className="font-weight-bold">
-                  EcoMush and Bulk Supply EcoMus
+                  <img
+                    src={Ecomush}
+                    alt=""
+                    className="img-fluid"
+                    style={{ height: '40px', width: '40px' }}
+                  />{' '}
+                  EcoMush
                 </span>{' '}
-                <br /> EcoMush and Bulk Supply EcoMush is a frozen mushroom
-                product that is sold in cold stores across Kumasi. For bulk
-                orders, see our contact info. We also provide order services for
-                food joints that need bulk fresh mushroom supply to run their
-                business.
+                <br /> Bulk Supply EcoMush is a frozen mushroom product that is
+                sold in cold stores across Kumasi. For bulk orders, see our
+                contact info. We also provide order services for food joints
+                that need bulk fresh mushroom supply to run their business.
               </p>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 
 import Footer from '../components/footer'
@@ -18,7 +18,30 @@ import Snail1 from '../images/snail-2594139.png'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
+import emailjs from 'emailjs-com'
+
 const Home = () => {
+  function sendEmail(e) {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_eyqlo05',
+        'template_4wlt0zd',
+        e.target,
+        'user_pXdHN5YaCXwi2QwIxzIrS',
+      )
+      .then(
+        (result) => {
+          console.log(result)
+          document.getElementsByClassName('popup')[0].classList.add('active')
+        },
+        (error) => {
+          console.log(error.text)
+        },
+      )
+  }
+
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -386,8 +409,7 @@ const Home = () => {
             <div className="col-md-8">
               <div className="u-expanded-width-sm u-expanded-width-xs u-form u-form-12">
                 <form
-                  action="#"
-                  method="POST"
+                  onSubmit={sendEmail}
                   className="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
                   style={{ padding: '1px' }}
                   source="custom"
@@ -395,7 +417,7 @@ const Home = () => {
                 >
                   <div className="u-form-group u-form-name">
                     <label
-                      for="name-3b9a"
+                      htmlFor="name-3b9a"
                       className="u-form-control-hidden u-label"
                     >
                       Name
@@ -406,12 +428,12 @@ const Home = () => {
                       id="name-3b9a"
                       name="name"
                       className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                      required=""
+                      required
                     />
                   </div>
                   <div className="u-form-email u-form-group">
                     <label
-                      for="email-3b9a"
+                      htmlFor="email-3b9a"
                       className="u-form-control-hidden u-label"
                     >
                       Email
@@ -422,12 +444,12 @@ const Home = () => {
                       id="email-3b9a"
                       name="email"
                       className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                      required=""
+                      required
                     />
                   </div>
                   <div className="u-form-group u-form-phone u-form-group-32">
                     <label
-                      for="phone-dd0b"
+                      htmlFor="phone-dd0b"
                       className="u-form-control-hidden u-label"
                     >
                       Phone
@@ -439,12 +461,12 @@ const Home = () => {
                       id="phone-dd0b"
                       name="phone"
                       className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                      required=""
+                      required
                     />
                   </div>
                   <div className="u-form-group u-form-message">
                     <label
-                      for="message-3b9a"
+                      htmlFor="message-3b9a"
                       className="u-form-control-hidden u-label"
                     >
                       Message
@@ -456,30 +478,16 @@ const Home = () => {
                       id="message-3b9a"
                       name="message"
                       className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                      required=""
+                      required
                     ></textarea>
                   </div>
                   <div className="u-align-center u-form-group u-form-submit">
-                    <Link
-                      to="#n"
-                      className="mybutton u-button-style u-custom-font u-font-raleway u-btn-12"
-                    >
-                      <span>Submit</span>
-                    </Link>
                     <input
                       type="submit"
                       value="submit"
-                      className="u-form-control-hidden"
+                      className="mybutton u-button-style u-custom-font u-font-raleway u-btn-12"
+                      style={{ backgroundColor: '#507736', color: '#fff' }}
                     />
-                  </div>
-                  <div className="u-form-send-message u-form-send-success">
-                    {' '}
-                    Thank you! Your message has been sent.{' '}
-                  </div>
-                  <div className="u-form-send-error u-form-send-message">
-                    {' '}
-                    Unable to send your message. Please fix errors then try
-                    again.{' '}
                   </div>
                   <input type="hidden" value="" name="recaptchaResponse" />
                 </form>

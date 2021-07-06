@@ -5,8 +5,36 @@ import '../css/contact.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import { Helmet } from 'react-helmet'
+import emailjs from 'emailjs-com'
 
-const contact = () => {
+const Contact = () => {
+  // const { handleSubmit, register } = useForm()
+  function sendEmail(e) {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_eyqlo05',
+        'template_4wlt0zd',
+        e.target,
+        'user_pXdHN5YaCXwi2QwIxzIrS',
+      )
+      .then(
+        (result) => {
+          console.log(result)
+          document.getElementsByClassName('popup')[0].classList.add('active')
+        },
+        (error) => {
+          console.log(error.text)
+        },
+      )
+  }
+
+  const close = () => {
+    document.getElementsByClassName('popup')[0].classList.remove('active')
+    window.location.reload()
+  }
+
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -21,19 +49,19 @@ const contact = () => {
       <Navbar />
       {/* Navbar Ends */}
       <section
-        class="u-align-left u-clearfix u-image u-section-12"
+        className="u-align-left u-clearfix u-image u-section-12"
         src=""
         data-image-width="1297"
         data-image-height="865"
         id="sec-b44b"
       >
-        <div class="u-clearfix u-sheet u-sheet-12">
-          <h1 class="u-custom-font u-font-raleway u-text u-text-12">
+        <div className="u-clearfix u-sheet u-sheet-12">
+          <h1 className="u-custom-font u-font-raleway u-text u-text-12">
             <span style={{ fontWeight: 700 }}>Contact</span>
             <br />
           </h1>
-          <h3 class="u-custom-font u-font-raleway u-text u-text-22">
-            <span class="u-text-palette-2-dark-1">Home</span> &gt; Contact
+          <h3 className="u-custom-font u-font-raleway u-text u-text-22">
+            <span className="u-text-palette-2-dark-1">Home</span> &gt; Contact
           </h3>
         </div>
       </section>
@@ -53,100 +81,104 @@ const contact = () => {
           </h5>
           <div className="u-expanded-width-sm u-expanded-width-xs u-form u-form-12">
             <form
-              action="#"
-              method="POST"
               className="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
               style={{ padding: '1px' }}
               source="custom"
               name="form"
+              onSubmit={sendEmail}
             >
               <div className="u-form-group u-form-name">
                 <label
-                  for="name-3b9a"
+                  htmlFor="name-3b9a"
                   className="u-form-control-hidden u-label"
                 >
                   Name
                 </label>
                 <input
+                  // {...register('name')}
                   type="text"
                   placeholder="Enter your Name"
                   id="name-3b9a"
                   name="name"
                   className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                  required=""
+                  required
                 />
               </div>
               <div className="u-form-email u-form-group">
                 <label
-                  for="email-3b9a"
+                  htmlFor="email-3b9a"
                   className="u-form-control-hidden u-label"
                 >
                   Email
                 </label>
                 <input
+                  // {...register('email')}
                   type="email"
                   placeholder="Enter a valid email address"
                   id="email-3b9a"
                   name="email"
                   className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                  required=""
+                  required
                 />
               </div>
               <div className="u-form-group u-form-phone u-form-group-32">
                 <label
-                  for="phone-dd0b"
+                  htmlFor="phone-dd0b"
                   className="u-form-control-hidden u-label"
                 >
                   Phone
                 </label>
                 <input
+                  // {...register('phone')}
                   type="tel"
                   pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})"
                   placeholder="Enter your phone (e.g. +14155552675)"
                   id="phone-dd0b"
                   name="phone"
                   className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                  required=""
+                  required
                 />
               </div>
               <div className="u-form-group u-form-message">
                 <label
-                  for="message-3b9a"
+                  htmlFor="message-3b9a"
                   className="u-form-control-hidden u-label"
                 >
                   Message
                 </label>
                 <textarea
+                  // {...register('message')}
                   placeholder="Enter your message"
                   rows="4"
                   cols="50"
                   id="message-3b9a"
                   name="message"
                   className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                  required=""
+                  required
                 ></textarea>
               </div>
               <div className="u-align-left u-form-group u-form-submit">
-                <a
-                  href="#n"
-                  className="u-btn u-btn-submit u-button-style u-custom-font u-font-raleway u-btn-12"
-                  style={{ backgroundColor: '#507736' }}
-                >
-                  SUBMIT
-                </a>
                 <input
                   type="submit"
                   value="submit"
-                  className="u-form-control-hidden"
+                  className="u-btn u-btn-submit u-button-style u-custom-font u-font-raleway u-btn-12"
+                  style={{ backgroundColor: '#507736' }}
                 />
               </div>
-              <div className="u-form-send-message u-form-send-success">
-                {' '}
-                Thank you! Your message has been sent.{' '}
-              </div>
-              <div className="u-form-send-error u-form-send-message">
-                {' '}
-                Unable to send your message. Please fix errors then try again.{' '}
+              <div className="popup center">
+                <div className="icon">
+                  <i className="fa fa-check"></i>
+                </div>
+                <div className="title">Success!!</div>
+                <div className="description">
+                  Thank you reaching out to us. You will hear from us soon.
+                </div>
+                <div className="dismiss-btn">
+                  <button id="dismiss-popup-btn" onClick={close}>
+                    Dismiss
+                  </button>
+                </div>
+                <div className="overlay"></div>
               </div>
               <input type="hidden" value="" name="recaptchaResponse" />
             </form>
@@ -181,7 +213,7 @@ const contact = () => {
             width="2000"
             height="600"
             style={{ border: 0 }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
           ></iframe>
         </div>
@@ -193,4 +225,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

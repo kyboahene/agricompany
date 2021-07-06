@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import BrandAfrik from '../images/dev_logo.svg'
+import Logo from '../images/agric2.jpg'
 
 const Footer = () => {
   return (
@@ -13,9 +14,12 @@ const Footer = () => {
       <div className="container text-center text-md-start text-white">
         <div className="row pt-4">
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 className="text-uppercase fw-bold mb-4 u-custom-font u-font-raleway">
-              <i className="fas fa-gem me-3 mr-2"></i>TIES Agric
-            </h6>
+            <img
+              src={Logo}
+              alt=""
+              className="img-fluid"
+              style={{ height: '40px', width: '130px' }}
+            />{' '}
             <p>
               A technology driven business that pioneers sustainable food
               production and processing in Africa.

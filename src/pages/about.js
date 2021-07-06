@@ -9,6 +9,7 @@ import Vision from '../images/vision.svg'
 import Abdullah from '../images/Abdullah.png'
 import Micheal from '../images/Micheal.jpg'
 import Oppong from '../images/Oppong.jpg'
+import Mission from '../images/Target.svg'
 import { Helmet } from 'react-helmet'
 
 const About = () => {
@@ -82,7 +83,7 @@ const About = () => {
         id="sec-e723"
         style={{ backgroundColor: '#507736', color: '#fff' }}
       >
-        <div className="u-clearfix u-sheet u-valign-middle u-sheet-11">
+        {/* <div className="u-clearfix u-sheet u-valign-middle u-sheet-11">
           <div className="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-11">
             <div className="u-layout">
               <div className="u-layout-row">
@@ -106,6 +107,21 @@ const About = () => {
                   <div className="u-container-layout u-container-layout-21"></div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div> */}
+        <div className="container py-5">
+          <div className="row my-3">
+            <div className="col-md-6 pt-5 justify-content-center align-items-center ">
+              <h1 className="u-custom-font u-font-raleway pt-5">Our Mission</h1>
+              <p className="u-custom-font u-font-raleway lead">
+                Our mission is to provide refined agricultural products using
+                technology and innovation to improve primary and secondary
+                agricultural production in Africa.
+              </p>
+            </div>
+            <div className="col-md-6 d-flex justify-content-center align-items-center">
+              <img src={Mission} className="img-fluid" alt="" />
             </div>
           </div>
         </div>
