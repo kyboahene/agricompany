@@ -42,6 +42,11 @@ const Home = () => {
       )
   }
 
+  const close = () => {
+    document.getElementsByClassName('popup')[0].classList.remove('active')
+    window.location.reload()
+  }
+
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -488,6 +493,21 @@ const Home = () => {
                       className="mybutton u-button-style u-custom-font u-font-raleway u-btn-12"
                       style={{ backgroundColor: '#507736', color: '#fff' }}
                     />
+                  </div>
+                  <div className="popup center">
+                    <div className="icon">
+                      <i className="fa fa-check"></i>
+                    </div>
+                    <div className="title">Success!!</div>
+                    <div className="description">
+                      Thank you reaching out to us. You will hear from us soon.
+                    </div>
+                    <div className="dismiss-btn">
+                      <button id="dismiss-popup-btn" onClick={close}>
+                        Dismiss
+                      </button>
+                    </div>
+                    <div className="overlay"></div>
                   </div>
                   <input type="hidden" value="" name="recaptchaResponse" />
                 </form>
