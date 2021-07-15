@@ -268,7 +268,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="what_we_do" style={{ border: '1px red solid' }}>
+      <section className="what_we_do">
         <div
           className="container u-custom-font u-font-raleway pt-5"
           id="what_we_do"
