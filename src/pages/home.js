@@ -6,6 +6,7 @@ import Navbar from '../components/navbar'
 import '../css/home.css'
 import Team from '../components/team'
 
+import Logo from '../images/agric.svg'
 import Image from '../images/image.jpg'
 import Mushroom from '../images/fungus-1194380_1920.jpg'
 import Snail from '../images/photo.jpg'
@@ -57,10 +58,6 @@ const Home = () => {
       >
         <Helmet>
           <title>Home - TIES Agric</title>
-          <meta
-            name="description"
-            content="A technology driven business that pioneers sustainable food production and processing in Africa"
-          ></meta>
         </Helmet>
         {/* Navbar Begins */}
         <Navbar />
