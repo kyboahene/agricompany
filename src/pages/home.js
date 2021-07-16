@@ -62,6 +62,7 @@ const Home = () => {
             name="description"
             content="A technology driven business that pioneers sustainable food production and processing in Africa"
           ></meta>
+          <meta itemProp="image" content={Logo}></meta>
           <meta property="og:type" content="website" />
           <meta
             property="og:url"
