@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 
 import Footer from '../components/footer'
@@ -14,76 +14,77 @@ import { Helmet } from 'react-helmet'
 
 const About = () => {
   return (
-    <motion.div
-      exit={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      className="u-body u-overlap"
-    >
-      <Helmet>
-        <title>About - TIES Agric</title>
-      </Helmet>
-      {/* Navbar Begins */}
-      <Navbar />
-      {/* Navbar Ends */}
-      <section
-        className="skrollable u-align-center u-clearfix u-image u-section-11"
-        src=""
-        data-image-width="1297"
-        data-image-height="865"
-        id="sec-7440"
+    <>
+      <motion.div
+        exit={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        className="u-body u-overlap"
       >
-        <div className="u-clearfix u-sheet u-sheet-1">
-          <h1 className="u-align-left u-custom-font u-font-raleway u-text u-text-11">
-            Know Us
-          </h1>
-          <h2 className="u-align-left u-custom-font u-font-raleway u-text u-text-21">
-            <span className="u-text-palette-2-dark-1">Home</span> &gt; About
-          </h2>
-        </div>
-      </section>
+        <Helmet>
+          <title>About - TIES Agric</title>
+        </Helmet>
+        {/* Navbar Begins */}
+        <Navbar />
+        {/* Navbar Ends */}
+        <section
+          className="skrollable u-align-center u-clearfix u-image u-section-11"
+          src=""
+          data-image-width="1297"
+          data-image-height="865"
+          id="sec-7440"
+        >
+          <div className="u-clearfix u-sheet u-sheet-1">
+            <h1 className="u-align-left u-custom-font u-font-raleway u-text u-text-11">
+              Know Us
+            </h1>
+            <h2 className="u-align-left u-custom-font u-font-raleway u-text u-text-21">
+              <span className="u-text-palette-2-dark-1">Home</span> &gt; About
+            </h2>
+          </div>
+        </section>
 
-      <section className="u-clearfix u-section-21" id="sec-4fdc">
-        <div className="u-clearfix u-sheet u-valign-middle u-sheet-11">
-          <div className="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-11">
-            <div className="u-layout">
-              <div className="u-layout-row">
-                <div
-                  className="u-container-style u-image u-layout-cell u-right-cell u-size-25 u-image-11"
-                  src=""
-                  data-image-width="1920"
-                  data-image-height="1278"
-                  data-aos="fade-left"
-                ></div>
-                <div className="u-align-left u-container-style u-layout-cell u-left-cell u-size-34 u-layout-cell-11">
-                  <div className="u-container-layout u-container-layout-11">
-                    <h1 className="u-custom-font u-font-raleway u-text u-text-11">
-                      Know About Our History
-                    </h1>
-                    <p className="u-custom-font u-font-raleway u-text u-text-21">
-                      Since 2017, we have strived to establish the business as a
-                      trustworthy supplier of primary agricultural produce. We
-                      started a mushroom farm, a goat farm and a snail farm. We
-                      are working to scale up while exploring natural
-                      preservation methods as our client base increases. This
-                      year, we hope to start supplying processed products to the
-                      wider market of domestic consumers by launching our first
-                      packaged organic mushroom product EcoMush.
-                    </p>
+        <section className="u-clearfix u-section-21" id="sec-4fdc">
+          <div className="u-clearfix u-sheet u-valign-middle u-sheet-11">
+            <div className="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-11">
+              <div className="u-layout">
+                <div className="u-layout-row">
+                  <div
+                    className="u-container-style u-image u-layout-cell u-right-cell u-size-25 u-image-11"
+                    src=""
+                    data-image-width="1920"
+                    data-image-height="1278"
+                    data-aos="fade-left"
+                  ></div>
+                  <div className="u-align-left u-container-style u-layout-cell u-left-cell u-size-34 u-layout-cell-11">
+                    <div className="u-container-layout u-container-layout-11">
+                      <h1 className="u-custom-font u-font-raleway u-text u-text-11">
+                        Know About Our History
+                      </h1>
+                      <p className="u-custom-font u-font-raleway u-text u-text-21">
+                        Since 2017, we have strived to establish the business as
+                        a trustworthy supplier of primary agricultural produce.
+                        We started a mushroom farm, a goat farm and a snail
+                        farm. We are working to scale up while exploring natural
+                        preservation methods as our client base increases. This
+                        year, we hope to start supplying processed products to
+                        the wider market of domestic consumers by launching our
+                        first packaged organic mushroom product EcoMush.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section
-        className="u-clearfix u-section-31"
-        id="sec-e723"
-        style={{ backgroundColor: '#507736', color: '#fff' }}
-      >
-        {/* <div className="u-clearfix u-sheet u-valign-middle u-sheet-11">
+        <section
+          className="u-clearfix u-section-31"
+          id="sec-e723"
+          style={{ backgroundColor: '#507736', color: '#fff' }}
+        >
+          {/* <div className="u-clearfix u-sheet u-valign-middle u-sheet-11">
           <div className="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-11">
             <div className="u-layout">
               <div className="u-layout-row">
@@ -110,117 +111,119 @@ const About = () => {
             </div>
           </div>
         </div> */}
-        <div className="container py-5">
-          <div className="row my-3">
-            <div className="col-md-6 pt-5 justify-content-center align-items-center ">
-              <h1 className="u-custom-font u-font-raleway pt-5">Our Mission</h1>
-              <p className="u-custom-font u-font-raleway lead">
-                Our mission is to provide refined agricultural products using
-                technology and innovation to improve primary and secondary
-                agricultural production in Africa.
-              </p>
-            </div>
-            <div className="col-md-6 d-flex justify-content-center align-items-center">
-              <img src={Mission} className="img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Vision Begins */}
-      <section className="container-fluid vision">
-        <div className="container py-5">
-          <div className="row my-5">
-            <div className="col-md-6 d-flex justify-content-center align-items-center">
-              <img src={Vision} className="img-fluid" alt="" />
-            </div>
-            <div className="col-md-6 u-custom-font u-font-raleway">
-              <h1 className="u-custom-font u-font-raleway font-weight-bold">
-                Our Vision
-              </h1>
-              <p className="u-custom-font u-font-raleway lead">
-                To become a forerunner in the agricultural business, providing
-                organically grown produce and adding value to to raw
-                agricultural products.
-              </p>
-
-              <h4 className="u-custom-font u-font-raleway font-weight-bold">
-                Company Philosophy
-              </h4>
-              <ul className="lead">
-                <li>
-                  <lord-icon
-                    src="https://cdn.lordicon.com//jvihlqtw.json"
-                    trigger="loop"
-                    colors="primary:#121331,secondary:#08a88a"
-                    style={{ width: '40px', height: '40px' }}
-                  ></lord-icon>
-                  Technology
-                </li>
-                <li>
-                  <lord-icon
-                    src="https://cdn.lordicon.com//jvihlqtw.json"
-                    trigger="loop"
-                    colors="primary:#121331,secondary:#08a88a"
-                    style={{ width: '40px', height: '40px' }}
-                  ></lord-icon>{' '}
-                  Innovation
-                </li>
-                <li>
-                  <lord-icon
-                    src="https://cdn.lordicon.com//jvihlqtw.json"
-                    trigger="loop"
-                    colors="primary:#121331,secondary:#08a88a"
-                    style={{ width: '40px', height: '40px' }}
-                  ></lord-icon>
-                  Empowerment{' '}
-                </li>
-                <li>
-                  <lord-icon
-                    src="https://cdn.lordicon.com//jvihlqtw.json"
-                    trigger="loop"
-                    colors="primary:#121331,secondary:#08a88a"
-                    style={{ width: '40px', height: '40px' }}
-                  ></lord-icon>
-                  Sustainability{' '}
-                </li>
-              </ul>
+          <div className="container py-5">
+            <div className="row my-3">
+              <div className="col-md-6 pt-5 justify-content-center align-items-center ">
+                <h1 className="u-custom-font u-font-raleway pt-5">
+                  Our Mission
+                </h1>
+                <p className="u-custom-font u-font-raleway lead">
+                  Our mission is to provide refined agricultural products using
+                  technology and innovation to improve primary and secondary
+                  agricultural production in Africa.
+                </p>
+              </div>
+              <div className="col-md-6 d-flex justify-content-center align-items-center">
+                <img src={Mission} className="img-fluid" alt="" />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      {/* Mission Ends */}
+        </section>
 
-      {/* Team Begins */}
-      <section
-        className="container-fluid"
-        style={{ backgroundColor: '#507736', color: '#fff' }}
-      >
-        <div className="container pb-5">
-          <div className="row d-flex justify-content-center py-5">
-            <div className="col text-center u-custom-font u-font-raleway">
-              <h1 className="u-custom-font u-font-raleway font-weight-bold">
-                Our Team
-              </h1>
-              <p className=" u-custom-font u-font-raleway lead">
-                The brains behind the great firm.
-              </p>
+        {/* Vision Begins */}
+        <section className="container-fluid vision">
+          <div className="container py-5">
+            <div className="row my-5">
+              <div className="col-md-6 d-flex justify-content-center align-items-center">
+                <img src={Vision} className="img-fluid" alt="" />
+              </div>
+              <div className="col-md-6 u-custom-font u-font-raleway">
+                <h1 className="u-custom-font u-font-raleway font-weight-bold">
+                  Our Vision
+                </h1>
+                <p className="u-custom-font u-font-raleway lead">
+                  To become a forerunner in the agricultural business, providing
+                  organically grown produce and adding value to to raw
+                  agricultural products.
+                </p>
+
+                <h4 className="u-custom-font u-font-raleway font-weight-bold">
+                  Company Philosophy
+                </h4>
+                <ul className="lead">
+                  <li>
+                    <lord-icon
+                      src="https://cdn.lordicon.com//jvihlqtw.json"
+                      trigger="loop"
+                      colors="primary:#121331,secondary:#08a88a"
+                      style={{ width: '40px', height: '40px' }}
+                    ></lord-icon>
+                    Technology
+                  </li>
+                  <li>
+                    <lord-icon
+                      src="https://cdn.lordicon.com//jvihlqtw.json"
+                      trigger="loop"
+                      colors="primary:#121331,secondary:#08a88a"
+                      style={{ width: '40px', height: '40px' }}
+                    ></lord-icon>{' '}
+                    Innovation
+                  </li>
+                  <li>
+                    <lord-icon
+                      src="https://cdn.lordicon.com//jvihlqtw.json"
+                      trigger="loop"
+                      colors="primary:#121331,secondary:#08a88a"
+                      style={{ width: '40px', height: '40px' }}
+                    ></lord-icon>
+                    Empowerment{' '}
+                  </li>
+                  <li>
+                    <lord-icon
+                      src="https://cdn.lordicon.com//jvihlqtw.json"
+                      trigger="loop"
+                      colors="primary:#121331,secondary:#08a88a"
+                      style={{ width: '40px', height: '40px' }}
+                    ></lord-icon>
+                    Sustainability{' '}
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="row text-center py-5">
-            <div className="col-md-4">
-              <img
-                src={Abdullah}
-                className="img-fluid rounded-circle member_image"
-                alt=""
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              />
-              <h4 className="mb-0 u-custom-font u-font-raleway">
-                Abdallah Salia
-              </h4>
-              <p className="my-0">CO-Founder</p>
-              {/* <div className="overlay">
+        </section>
+        {/* Mission Ends */}
+
+        {/* Team Begins */}
+        <section
+          className="container-fluid"
+          style={{ backgroundColor: '#507736', color: '#fff' }}
+        >
+          <div className="container pb-5">
+            <div className="row d-flex justify-content-center py-5">
+              <div className="col text-center u-custom-font u-font-raleway">
+                <h1 className="u-custom-font u-font-raleway font-weight-bold">
+                  Our Team
+                </h1>
+                <p className=" u-custom-font u-font-raleway lead">
+                  The brains behind the great firm.
+                </p>
+              </div>
+            </div>
+            <div className="row text-center py-5">
+              <div className="col-md-4">
+                <img
+                  src={Abdullah}
+                  className="img-fluid rounded-circle member_image"
+                  alt=""
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                />
+                <h4 className="mb-0 u-custom-font u-font-raleway">
+                  Abdallah Salia
+                </h4>
+                <p className="my-0">CO-Founder</p>
+                {/* <div className="overlay">
                 <div className="middle">
                   <div className="d-flex">
                     <a href="" className="me-4 text-reset">
@@ -241,20 +244,20 @@ const About = () => {
                   </div>
                 </div>
               </div> */}
-            </div>
-            <div className="col-md-4">
-              <img
-                src={Micheal}
-                className="img-fluid rounded-circle member_image"
-                alt=""
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              />
-              <h4 className="mb-0 u-custom-font u-font-raleway">
-                Michael Osei Twene
-              </h4>
-              <p className="my-0">CO-Founder</p>
-              {/* <div className="overlay">
+              </div>
+              <div className="col-md-4">
+                <img
+                  src={Micheal}
+                  className="img-fluid rounded-circle member_image"
+                  alt=""
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                />
+                <h4 className="mb-0 u-custom-font u-font-raleway">
+                  Michael Osei Twene
+                </h4>
+                <p className="my-0">CO-Founder</p>
+                {/* <div className="overlay">
                 <div className="middle">
                   <div className="d-flex">
                     <a href="" className="me-4 text-reset">
@@ -275,20 +278,20 @@ const About = () => {
                   </div>
                 </div>
               </div> */}
-            </div>
-            <div className="col-md-4">
-              <img
-                src={Oppong}
-                className="img-fluid rounded-circle member_image"
-                alt=""
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              />
-              <h4 className="mb-0 u-custom-font u-font-raleway">
-                Oppong Kwame
-              </h4>
-              <p className="my-0">Farm Manager</p>
-              {/* <div className="overlay">
+              </div>
+              <div className="col-md-4">
+                <img
+                  src={Oppong}
+                  className="img-fluid rounded-circle member_image"
+                  alt=""
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                />
+                <h4 className="mb-0 u-custom-font u-font-raleway">
+                  Oppong Kwame
+                </h4>
+                <p className="my-0">Farm Manager</p>
+                {/* <div className="overlay">
                 <div className="middle">
                   <div className="d-flex">
                     <a href="" className="me-4 text-reset">
@@ -309,14 +312,14 @@ const About = () => {
                   </div>
                 </div>
               </div> */}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      {/* Team Ends */}
+        </section>
+        {/* Team Ends */}
 
-      {/* Client Reviews */}
-      {/* 
+        {/* Client Reviews */}
+        {/* 
       <section
         className="u-clearfix u-palette-2-light-3 u-section-51"
         id="sec-9e27"
@@ -413,16 +416,17 @@ const About = () => {
           </div>
         </div>
       </section> */}
-      {/* Client Ends */}
+        {/* Client Ends */}
 
-      {/* Gallery Begins*/}
-      <Gallery />
-      {/* Gallery Ends */}
+        {/* Gallery Begins*/}
+        <Gallery />
+        {/* Gallery Ends */}
 
-      {/* Footer Begins */}
-      <Footer />
-      {/* Footer Ends */}
-    </motion.div>
+        {/* Footer Begins */}
+        <Footer />
+        {/* Footer Ends */}
+      </motion.div>
+    </>
   )
 }
 
