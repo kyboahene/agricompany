@@ -58,6 +58,33 @@ const Home = () => {
       >
         <Helmet>
           <title>Home - TIES Agric</title>
+          <meta
+            name="description"
+            content="A technology driven business that pioneers sustainable food production and processing in Africa"
+          ></meta>
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:url"
+            content="A technology driven business that pioneers sustainable food production and processing in Africa"
+          />
+          <meta property="og:title" content="TIES Agric" />
+          <meta
+            property="og:description"
+            content="A technology driven business that pioneers sustainable food production and processing in Africa"
+          />
+          <meta property="og:image" content={Logo} />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:url"
+            content="A technology driven business that pioneers sustainable food production and processing in Africa"
+          />
+          <meta property="twitter:title" content="TIES Agric" />
+          <meta
+            property="twitter:description"
+            content="A technology driven business that pioneers sustainable food production and processing in Africa"
+          />
+          <meta property="twitter:image" content={Logo} />
         </Helmet>
         {/* Navbar Begins */}
         <Navbar />
